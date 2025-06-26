@@ -5,7 +5,8 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="pt-20 h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-20 bg-black text-white">
+    //  bg-[261c05]
+    <div className="bg-black pt-20 h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-20 text-white">
       <HeroContent />
       <div className="my-6 lg:my-0">
         <Image
@@ -16,6 +17,7 @@ export default function Hero() {
           className="rounded "
         />
       </div>
+
       <HeroAbout />
     </div>
   );

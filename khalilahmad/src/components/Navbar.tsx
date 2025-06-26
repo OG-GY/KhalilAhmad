@@ -1,8 +1,32 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
+  const [mobMenuOpen, setMobMenuOpen] = useState(false);
+  const [hovered, setHovered] = useState(0);
+  const [scrollY, setScrollY] = useState(0); // ✅ Defined before usage
+
+  // ✅ Scroll tracking
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navbarVariants = {
+    visible: {
+      backgroundColor: "rgba(17, 17, 17, 0.8)",
+      backdropFilter: "blur(8px)",
+      boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+    },
+    hidden: {
+      backgroundColor: "rgba(17, 17, 17, 0)",
+      backdropFilter: "blur(0px)",
+      boxShadow: "none",
+    },
+  };
+
   const Navitems = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
@@ -10,19 +34,6 @@ export default function Navbar() {
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },
   ];
-
-  const [mobMenuOpen, setMobMenuOpen] = useState(false);
-  const [hovered, setHovered] = useState(0);
-
-
-  const navbarVariants = {
-    visible: {
-      backgroundColor: "rgba(var(--background), 0.8)",
-      backdropFilter: "blur(8px)",
-      boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
-    },
-    hidden: { backgroundColor: "rgba(var(--background), 0)", backdropFilter: "blur(0px)", boxShadow: "none" },
-  }
 
   return (
     <motion.nav
@@ -77,7 +88,7 @@ export default function Navbar() {
             transition={{ duration: 0.6 }}
             onClick={() => setMobMenuOpen(!mobMenuOpen)}
           >
-            Hire Me
+            Download CV
           </motion.button>
         </div>
 

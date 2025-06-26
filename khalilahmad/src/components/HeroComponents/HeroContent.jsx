@@ -1,12 +1,8 @@
 "use client";
-import {Roboto_Condensed,Oswald, Merriweather_Sans, Rubik_Mono_One} from "next/font/google";
+import {Oswald, Merriweather_Sans, Rubik_Mono_One } from "next/font/google";
 import { PhoneForwarded } from 'lucide-react';
+import {ReactTyped} from "react-typed";
 
-
-const robotocondensed= Roboto_Condensed({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -29,14 +25,17 @@ export default function HeroContent() {
       <h1 className={` mt-0 text-5xl lg:text-6xl font-extrabold text-amber-400 `}>Khalil <span className="">Ahmad</span></h1>
       <h2 className="text-3xl lg:text-3xl font-semibold mt-6">Full Stack Web Developer</h2>
       <h2 className="text-xl lg:text-2xl mt-1">
-        I am a <span className="text-amber-400">UI/UX Designer</span>
+        I am a <ReactTyped className="text-amber-400" strings={["UI/UX Designer", "Frontend Developer", "Backend Developer"]}
+          typeSpeed={50}
+          backSpeed={30}
+          loop />
       </h2>
 
-      <div className="flex mt-6 gap-4">
-        <button className={`${merri.className} text-md cursor-pointer bg-amber-400 text-black font-extrabold px-6 py-2 rounded-sm hover:bg-none transition `}>
-          Download CV
+      <div className="flex mt-6 gap-2 ">
+        <button className={`${merri.className} leading-none cursor-pointer bg-amber-400 text-black px-8 py-2 rounded-sm hover:bg-transparent hover:text-amber-400 hover:border-2 hover:border-amber-400 hover:scale-102 transition `}>
+          Hire Me
         </button>
-        <button className="cursor-pointer border-2 border-amber-400 text-amber-400 px-4 py-3 rounded-sm hover:bg-amber-400 hover:text-black transition">
+        <button className="cursor-pointer border-2 border-amber-400 text-amber-400 px-3 py-2 rounded-sm hover:bg-amber-400 hover:text-black transition">
           <PhoneForwarded />
         </button>
       </div>

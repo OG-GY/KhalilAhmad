@@ -6,7 +6,7 @@ export default function Technologies() {
       <h1 className="text-center text-4xl font-bold mb-12">
         <span className="text-white">What </span>
         <span className="text-yellow-500">Technologies </span>
-        <span className="text-white">I've worked at </span>
+        <span className="text-white">Ive worked at </span>
       </h1>
       <FallingText
         text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}

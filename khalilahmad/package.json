@@ -31,6 +31,7 @@
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
+    "next": "15.2.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/matter-js": "^0.19.8",

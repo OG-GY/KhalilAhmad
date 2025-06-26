@@ -49,7 +49,7 @@ export default function Services() {
       <h1 className="text-center text-4xl font-bold mb-12">
         <span className="text-white">What </span>
         <span className="text-yellow-500">Services </span>
-        <span className="text-white">i offer </span>
+        <span className="text-white">I offer </span>
       </h1>
       <div className="flex flex-wrap justify-center gap-6 w-full">
         {ServiceData.map((service) => (

@@ -12,6 +12,7 @@ export const services: Service[] = [
     id: '1',
     name: 'Frontend Development',
     description: 'Creating responsive and interactive user interfaces using modern JavaScript frameworks like React, Vue, or Angular.',
+    // icon is a Lucide icon component, not JSX or object
     icon: MonitorSmartphone,
     slug: 'frontend-development',
   },
@@ -19,6 +20,7 @@ export const services: Service[] = [
     id: '2',
     name: 'Full Stack Development',
     description: 'Developing a complete full stack scalable website with database integration and user friendly interface.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Layers3,
     slug: 'full-stack-development',
   },
@@ -26,6 +28,7 @@ export const services: Service[] = [
     id: '3',
     name: 'UI/UX Design',
     description: 'Designing user-friendly interfaces and experiences that enhance usability and engagement.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Palette,
     slug: 'ui-ux-design',
   },
@@ -33,6 +36,7 @@ export const services: Service[] = [
     id: '4',
     name: 'Database Development',
     description: 'Designing and implementing robust database solutions for optimal data management and performance.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Database,
     slug: 'database-development',
   },
@@ -40,6 +44,7 @@ export const services: Service[] = [
     id: '5',
     name: 'Web Scraping',
     description: 'Extracting useful data from websites using tools like BeautifulSoup, Puppeteer, or Selenium.',
+    // icon is a Lucide icon component, not JSX or object
     icon: DatabaseZap,
     slug: 'web-scraping',
   },
@@ -53,6 +58,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Crafting Beautiful, Responsive User Interfaces',
     description: 'Transform your ideas into stunning, interactive web applications that engage users and drive results.',
     detailedDescription: 'I specialize in creating modern, responsive, and performant frontend applications using cutting-edge technologies. From single-page applications to complex web platforms, I deliver pixel-perfect designs that work seamlessly across all devices and browsers.',
+    // icon is a Lucide icon component, not JSX or object
     icon: MonitorSmartphone,
     technologies: ['React.js', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'SCSS/SASS', 'Webpack', 'Vite'],
     features: [
@@ -188,6 +194,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Complete Web Solutions from Database to User Interface',
     description: 'End-to-end web development solutions that cover everything from backend architecture to stunning frontend experiences.',
     detailedDescription: 'I provide comprehensive full-stack development services, building scalable web applications from the ground up. With expertise in both frontend and backend technologies, I create seamless, integrated solutions that meet your business needs and scale with your growth.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Layers3,
     technologies: ['Node.js', 'Express.js', 'React.js', 'Next.js', 'MongoDB', 'PostgreSQL', 'TypeScript', 'GraphQL', 'REST APIs', 'Docker', 'AWS/Vercel'],
     features: [
@@ -326,6 +333,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Designing Experiences That Users Love',
     description: 'Creating intuitive, beautiful, and user-centered designs that enhance engagement and drive conversions.',
     detailedDescription: 'I combine creativity with data-driven insights to design user interfaces and experiences that not only look stunning but also solve real user problems. From wireframes to high-fidelity prototypes, I create designs that delight users and achieve business goals.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Palette,
     technologies: ['Figma', 'Adobe XD', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator', 'Principle', 'InVision', 'Framer', 'Miro'],
     features: [
@@ -462,6 +470,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Robust Database Solutions for Your Applications',
     description: 'Designing and implementing efficient, scalable database architectures that power your applications.',
     detailedDescription: 'I specialize in creating robust database solutions that handle your data efficiently and scale with your business growth. From schema design to performance optimization, I ensure your data infrastructure is reliable, secure, and performant.',
+    // icon is a Lucide icon component, not JSX or object
     icon: Database,
     technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'SQLite', 'Prisma', 'Mongoose', 'SQL', 'NoSQL', 'Database Design', 'Indexing'],
     features: [
@@ -597,6 +606,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Extract Valuable Data from Any Website',
     description: 'Automated data extraction solutions that gather the information you need efficiently and reliably.',
     detailedDescription: 'I develop custom web scraping solutions that extract valuable data from websites automatically. Whether you need product information, market research data, or competitive intelligence, I create robust scraping systems that handle dynamic content, anti-bot measures, and deliver clean, structured data.',
+    // icon is a Lucide icon component, not JSX or object
     icon: DatabaseZap,
     technologies: ['Python', 'BeautifulSoup', 'Scrapy', 'Selenium', 'Puppeteer', 'Node.js', 'Requests', 'Pandas', 'API Integration'],
     features: [

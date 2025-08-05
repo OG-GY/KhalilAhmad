@@ -14,7 +14,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       
       {/* Icon */}
       <div className="text-4xl sm:text-5xl mb-6 text-amber-400 group-hover:text-black transition-colors duration-300">
-        {service.icon}
+        {service.icon && <service.icon size={48} />}
       </div>
       
       {/* Title */}

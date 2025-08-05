@@ -1,11 +1,12 @@
 // models/serviceModel.ts
-import { ReactNode } from 'react';
+// No unused imports needed
+import { LucideIcon } from 'lucide-react';
 
 export type Service = {
   id: string;
   name: string;
   description: string;
-  icon: ReactNode; // 🔥 JSX-compatible type
+  icon: LucideIcon;
   slug: string;
   url?: string;
   isActive?: boolean;
@@ -20,7 +21,7 @@ export type ServiceDetail = {
   tagline: string;
   description: string;
   detailedDescription: string;
-  icon: ReactNode;
+  icon: LucideIcon;
   heroImage?: string;
   technologies: string[];
   features: string[];

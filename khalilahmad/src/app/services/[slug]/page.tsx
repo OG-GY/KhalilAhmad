@@ -44,7 +44,7 @@ export default function ServiceDetailPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="text-amber-400 bg-amber-400/10 p-4 rounded-lg">
-                  {service.icon}
+                  {service.icon && <service.icon size={40} />}
                 </div>
                 <div>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">

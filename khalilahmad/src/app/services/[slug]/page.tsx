@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { getServiceBySlug, getAllServiceSlugs } from '../../../data/services';
+import { getServiceBySlug } from '../../../data/services';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, Check, Star, Quote, ArrowRight, Users, Clock, Award } from 'lucide-react';
 import Link from 'next/link';

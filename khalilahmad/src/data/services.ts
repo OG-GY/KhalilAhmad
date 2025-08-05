@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   MonitorSmartphone,
   Layers3,
@@ -54,7 +53,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Crafting Beautiful, Responsive User Interfaces',
     description: 'Transform your ideas into stunning, interactive web applications that engage users and drive results.',
     detailedDescription: 'I specialize in creating modern, responsive, and performant frontend applications using cutting-edge technologies. From single-page applications to complex web platforms, I deliver pixel-perfect designs that work seamlessly across all devices and browsers.',
-    icon: <MonitorSmartphone size={48} />,
+    icon: MonitorSmartphone,
     technologies: ['React.js', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'SCSS/SASS', 'Webpack', 'Vite'],
     features: [
       'Responsive Design for All Devices',
@@ -189,7 +188,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Complete Web Solutions from Database to User Interface',
     description: 'End-to-end web development solutions that cover everything from backend architecture to stunning frontend experiences.',
     detailedDescription: 'I provide comprehensive full-stack development services, building scalable web applications from the ground up. With expertise in both frontend and backend technologies, I create seamless, integrated solutions that meet your business needs and scale with your growth.',
-    icon: <Layers3 size={48} />,
+    icon: Layers3,
     technologies: ['Node.js', 'Express.js', 'React.js', 'Next.js', 'MongoDB', 'PostgreSQL', 'TypeScript', 'GraphQL', 'REST APIs', 'Docker', 'AWS/Vercel'],
     features: [
       'End-to-End Development',
@@ -327,7 +326,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Designing Experiences That Users Love',
     description: 'Creating intuitive, beautiful, and user-centered designs that enhance engagement and drive conversions.',
     detailedDescription: 'I combine creativity with data-driven insights to design user interfaces and experiences that not only look stunning but also solve real user problems. From wireframes to high-fidelity prototypes, I create designs that delight users and achieve business goals.',
-    icon: <Palette size={48} />,
+    icon: Palette,
     technologies: ['Figma', 'Adobe XD', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator', 'Principle', 'InVision', 'Framer', 'Miro'],
     features: [
       'User Research & Analysis',
@@ -463,7 +462,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Robust Database Solutions for Your Applications',
     description: 'Designing and implementing efficient, scalable database architectures that power your applications.',
     detailedDescription: 'I specialize in creating robust database solutions that handle your data efficiently and scale with your business growth. From schema design to performance optimization, I ensure your data infrastructure is reliable, secure, and performant.',
-    icon: <Database size={48} />,
+    icon: Database,
     technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'SQLite', 'Prisma', 'Mongoose', 'SQL', 'NoSQL', 'Database Design', 'Indexing'],
     features: [
       'Database Schema Design',
@@ -598,7 +597,7 @@ export const serviceDetails: ServiceDetail[] = [
     tagline: 'Extract Valuable Data from Any Website',
     description: 'Automated data extraction solutions that gather the information you need efficiently and reliably.',
     detailedDescription: 'I develop custom web scraping solutions that extract valuable data from websites automatically. Whether you need product information, market research data, or competitive intelligence, I create robust scraping systems that handle dynamic content, anti-bot measures, and deliver clean, structured data.',
-    icon: <DatabaseZap size={48} />,
+    icon: DatabaseZap,
     technologies: ['Python', 'BeautifulSoup', 'Scrapy', 'Selenium', 'Puppeteer', 'Node.js', 'Requests', 'Pandas', 'API Integration'],
     features: [
       'Dynamic Content Scraping',

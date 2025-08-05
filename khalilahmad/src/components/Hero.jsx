@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="lg:hidden w-full flex justify-center mb-8 mt-8">
         <div className="relative">
           <Image
-            src="/Images/khalilhero.png"
+            src="/khalilhero.png"
             width={300}
             height={400}
             alt="Khalil Ahmad"

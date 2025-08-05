@@ -1,6 +1,6 @@
 "use client"
 
-import { PerfectSelect, type SelectOption } from "./perfect-select"
+import { PerfectSelect } from "./perfect-select"
 import {
   User,
   MapPin,

@@ -120,3 +120,72 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom responsive improvements */
+@layer utilities {
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Ensure all sections have proper spacing on mobile */
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Container with max width and centering */
+  .container-responsive {
+    @apply max-w-7xl mx-auto w-full;
+  }
+  
+  /* Responsive text sizing */
+  .heading-responsive {
+    @apply text-3xl sm:text-4xl lg:text-5xl xl:text-6xl;
+  }
+  
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+  
+  /* Image responsiveness */
+  .img-responsive {
+    @apply w-full h-auto object-cover;
+  }
+  
+  /* Card spacing for grids */
+  .grid-responsive {
+    @apply grid gap-6 sm:gap-8 lg:gap-10;
+  }
+  
+  /* Button responsiveness */
+  .btn-responsive {
+    @apply px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base;
+  }
+  
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Media queries for fine-tuning */
+@media (max-width: 640px) {
+  /* Reduce motion on small screens for better performance */
+  .motion-reduce {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet specific optimizations */
+  .tablet-optimize {
+    font-size: 95%;
+  }
+}

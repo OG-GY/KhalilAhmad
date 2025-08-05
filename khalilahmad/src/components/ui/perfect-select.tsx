@@ -495,7 +495,9 @@ const PerfectSelect = React.forwardRef<HTMLDivElement, PerfectSelectProps>(
       return (
         <div
           key={option.value}
-          ref={(el) => (optionRefs.current[index] = el)}
+          ref={(el) => {
+            optionRefs.current[index] = el;
+          }}
           className={cn(
             "flex items-center gap-3 px-3 py-2.5 cursor-pointer transition-colors relative",
             "hover:bg-muted/50 focus:bg-muted/50",
@@ -581,7 +583,7 @@ const PerfectSelect = React.forwardRef<HTMLDivElement, PerfectSelectProps>(
                   className="flex items-center gap-2 w-full text-left hover:bg-muted/50 rounded px-2 py-1 transition-colors"
                 >
                   <Plus className="h-4 w-4" />
-                  Create "{searchQuery.trim()}"
+                  Create &quot;{searchQuery.trim()}&quot;
                 </button>
               ) : (
                 emptyMessage

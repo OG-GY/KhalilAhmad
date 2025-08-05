@@ -32,7 +32,7 @@ export function CustomSelect({
   const selectedOption = options.find((opt) => opt.value === value);
 
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full max-w-xl">
       {label && <label className="block text-sm font-medium mb-1">{label}</label>}
       <div className="relative">
         <button

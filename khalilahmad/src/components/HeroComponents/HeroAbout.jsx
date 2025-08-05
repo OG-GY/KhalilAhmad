@@ -5,12 +5,10 @@ import { Github, Linkedin, Instagram, Facebook, MailOpen } from 'lucide-react';
 import { Oswald } from "next/font/google";
 import { Tooltip } from "@heroui/react";
 
-
 const oswald = Oswald({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
 });
-
 
 export default function HeroAbout() {
   const Socials = [
@@ -18,23 +16,38 @@ export default function HeroAbout() {
     { name: "Linkedin", color: "warning", icon: Linkedin, link: "https://www.linkedin.com/in/khalil-ahmad-411270260/" },
     { name: "Instagram", color: "warning", icon: Instagram, link: "https://" },
     { name: "Facebook", color: "warning", icon: Facebook, link: "https://web.facebook.com/khalil.ahmad.916877" },
-    { name: "Gmail", color: "warning", icon: MailOpen, copy: "iamkhalil2005@gmail.com" },
+    { name: "Gmail", color: "warning", icon: MailOpen, copy: "reachkhalilhere@gmail.com" },
   ];
 
   return (
-    <div className="text-white max-w-sm mt-10 lg:-mt-8">
-      <h4 className={` text-3xl font-bold text-amber-400 mb-2`}>About Me</h4>
-      <p className="text-md text-gray-300 mb-4">
-        Full Stack Developer with experience across multiple tech stacks, languages, and domains. Specialized in <span className="text-amber-400">Next.js</span>, <span className="text-amber-400">React</span>, and <span className="text-amber-400">Node.js</span>. I build scalable web applications and have a passion for creating intuitive user experiences.
+    <div className="text-white w-full max-w-sm lg:max-w-md xl:max-w-lg text-center lg:text-left">
+      <h4 className="text-2xl sm:text-3xl font-bold text-amber-400 mb-3 lg:mb-4">
+        About Me
+      </h4>
+      
+      <p className="text-sm sm:text-base lg:text-md text-gray-300 mb-6 leading-relaxed">
+        Full Stack Developer with experience across multiple tech stacks, languages, and domains. 
+        Specialized in{' '}
+        <span className="text-amber-400 font-medium">Next.js</span>,{' '}
+        <span className="text-amber-400 font-medium">React</span>, and{' '}
+        <span className="text-amber-400 font-medium">Node.js</span>. 
+        I build scalable web applications and have a passion for creating intuitive user experiences.
       </p>
-      <div className="flex justify-between gap-4 mb-6 mt-2">
-        <HeroStat upper="Top" count="5%" lower="on Topmate" string="%"/>
-        <HeroStat upper="Mentored" count="40+" lower="Student Developers" string="+" />
-        <HeroStat upper="Built" count="20+" lower="Web Projects" string="+"/>
+      
+      {/* Stats Grid */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 lg:mb-8">
+        <HeroStat upper="Top" count="5" lower="on Topmate" string="%" />
+        <HeroStat upper="Mentored" count="40" lower="Student Developers" string="+" />
+        <HeroStat upper="Built" count="20" lower="Web Projects" string="+" />
       </div>
-      <div className="mt-8">
-        <h4 className="text-xl font-bold text-amber-400 mb-2">Find me on</h4>
-        <div className="flex gap-3 mt-4 items-center justify-center flex-wrap">
+      
+      {/* Social Links */}
+      <div className="mt-6 lg:mt-8">
+        <h4 className="text-lg sm:text-xl font-bold text-amber-400 mb-3 lg:mb-4">
+          Find me on
+        </h4>
+        
+        <div className="flex gap-2 sm:gap-3 items-center justify-center lg:justify-start flex-wrap">
           {Socials.map((social, index) => {
             const IconComponent = social.icon;
             return (
@@ -50,23 +63,23 @@ export default function HeroAbout() {
                     onClick={() => {
                       navigator.clipboard.writeText(social.copy);
                       addToast({
-                        title: "Toast title",
-                        description: "Toast displayed successfully",
+                        title: "Email Copied!",
+                        description: "Email address copied to clipboard",
                         color: "warning",
-                      })
+                      });
                     }}
-                    className="text-white border-2 cursor-pointer border-amber-400 p-2 rounded-full hover:bg-amber-400 hover:text-black transition"
+                    className="text-white border-2 cursor-pointer border-amber-400 p-2 sm:p-3 rounded-full hover:bg-amber-400 hover:text-black transition-all duration-300 hover:scale-110"
                   >
-                    <IconComponent size={24} />
+                    <IconComponent size={20} className="sm:w-6 sm:h-6" />
                   </button>
                 ) : (
                   <a
                     href={social.link}
-                    className="text-white border-2 border-amber-400 p-2 rounded-full hover:bg-amber-400 hover:text-black transition"
+                    className="text-white border-2 border-amber-400 p-2 sm:p-3 rounded-full hover:bg-amber-400 hover:text-black transition-all duration-300 hover:scale-110"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <IconComponent size={24} />
+                    <IconComponent size={20} className="sm:w-6 sm:h-6" />
                   </a>
                 )}
               </Tooltip>
@@ -74,7 +87,6 @@ export default function HeroAbout() {
           })}
         </div>
       </div>
-
     </div>
   );
 }

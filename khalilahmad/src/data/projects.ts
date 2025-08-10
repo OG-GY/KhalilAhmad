@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: "A real-world MVP streamlining student and community engagement across universities.",
     longDescription:
       "Led the end-to-end development of a scalable platform enabling campus communities to interact, collaborate, and manage their operations. Spearheaded sprint planning and implemented CRUD operations across community modules, resulting in a user-friendly experience tested by 5+ demo communities.",
-    image: "/images/TechStacks/figma.png",
+    image: "/Projects/unisphere.png",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN", "Prisma", "PostgreSQL"],
     techStack: {
       frontend: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN"],
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: "An OCR-based web application for retrieving and storing academic past papers.",
     longDescription:
       "Engineered an OCR-driven solution using Streamlit and OpenCV that simplifies access to academic resources for students. Allowed categorization by semester, teacher, subject, and paper type, solving a recurring student pain point for past paper accessibility.",
-    image: "/images/past-paper-extractor.png",
+    image: "/Projects/pastpaper.png",
     technologies: ["Streamlit", "Python", "OpenCV"],
     techStack: {
       frontend: ["Streamlit"],
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description: "A tool to automate HTML and text-based email campaigns for communities.",
     longDescription:
       "Developed an efficient community tool with dynamic HTML/text email templates, cutting email campaign prep time by 3+ hours weekly. Supported sending targeted communication to 50+ members with reusable templates.",
-    image: "/images/bulk-email-sender.png",
+    image: "/Projects/bulkemail.png",
     technologies: ["Streamlit", "Python"],
     techStack: {
       frontend: ["Streamlit"],
@@ -90,7 +90,35 @@ export const projects: Project[] = [
     description: "A polished portfolio site for UET Game Studio showcasing student-built games.",
     longDescription:
       "Built and deployed a modern portfolio for UET Game Studio, showcasing 15+ WebGL Unity games. Integrated game cards with smooth animations, attracting visibility and cross-device compatibility. Continues to evolve with added game support and frontend enhancements.",
-    image: "/images/uet-portfolio.png",
+    image: "/Projects/ugs.png",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+    techStack: {
+      frontend: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+      backend: [],
+      tools: ["Vercel", "Git"]
+    },
+    links: {
+      live: "https://uet-game-portfolio.vercel.app",
+      github: "https://github.com/username/uet-portfolio"
+    },
+    features: [
+      "Game showcase",
+      "Responsive design",
+      "Smooth page transitions",
+      "Unity WebGL support"
+    ],
+    status: "completed" ,
+    year: 2024,
+    category: "Portfolio",
+    color: "#AF7AC5"
+  },
+  {
+    id: "portal-uet-portfolio",
+    title: "Gaming Portal for UET Game Studio",
+    description: "A polished portfolio site for UET Game Studio showcasing student-built games.",
+    longDescription:
+      "Built and deployed a modern portfolio for UET Game Studio, showcasing 15+ WebGL Unity games. Integrated game cards with smooth animations, attracting visibility and cross-device compatibility. Continues to evolve with added game support and frontend enhancements.",
+    image: "/Projects/pugs.png",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
     techStack: {
       frontend: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
@@ -118,7 +146,7 @@ export const projects: Project[] = [
     description: "A lightweight code editor enhanced with Data Structure & Algorithm modules.",
     longDescription:
       "Architected a custom Python-based editor with core editing features like undo/redo, search, syntax highlighting, and integrated DSA operations to reinforce programming learning. Built using QT Creator and designed for students tackling algorithm problems.",
-    image: "/images/nexus-editor.png",
+    image: "/Projects/nexuscode.png",
     technologies: ["Python", "QT Creator"],
     techStack: {
       frontend: ["QT UI"],
@@ -144,7 +172,7 @@ export const projects: Project[] = [
     description: "A scalable book metadata scraper using multi-threaded scraping pipelines.",
     longDescription:
       "Automated the extraction of metadata for over 1 million books using Python, BeautifulSoup, and PyQT. Reduced manual effort by over 14 hours while boosting team productivity by 40% via parallelized scraping.",
-    image: "/images/honey-scraper.png",
+    image: "/Projects/honeyscrapper.png",
     technologies: ["Python", "BeautifulSoup", "PyQT5"],
     techStack: {
       backend: ["Python", "BeautifulSoup"],
@@ -169,7 +197,7 @@ export const projects: Project[] = [
     description: "An ASP.NET-based management system for online food orders and user tracking.",
     longDescription:
       "Built an end-to-end cafe management system with both user-facing and admin-facing modules. Managed orders, menus, user data, and implemented SQL-based tracking for operations efficiency.",
-    image: "/images/annexxie-cafe.png",
+    image: "/Projects/caffemanager.png",
     technologies: ["ASP.NET Core", "Razor Pages", "C#", "SQL"],
     techStack: {
       frontend: ["Razor Pages"],

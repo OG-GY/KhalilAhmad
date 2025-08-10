@@ -45,15 +45,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased theme-bg-primary theme-text-primary`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white`}
       >
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Providers>
-            <div className="min-h-screen theme-bg-primary">
+            <div className="min-h-screen bg-gray-900">
               <ClickSpark
-                sparkColor="var(--portfolio-primary)"
+                sparkColor="#FEA600"
                 sparkSize={10}
                 sparkRadius={15}
                 sparkCount={8}

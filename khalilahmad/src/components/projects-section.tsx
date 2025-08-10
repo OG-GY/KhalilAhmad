@@ -31,7 +31,7 @@ export function ProjectsSection() {
   const hasMoreProjects = projects.length > visibleProjects
 
   return (
-    <section id="projects" className="bg-black text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="bg-zinc-950 text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8 sm:mb-12 lg:mb-16 text-center">
           <h2 className="mb-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
@@ -57,7 +57,7 @@ export function ProjectsSection() {
               onClick={handleLoadMore}
               variant="outline"
               size="lg"
-              className="group cursor-pointer border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-300 px-6 py-3 text-base font-medium"
+              className="group cursor-pointer bg-zinc-900 border-2 border-black hover:border-amber-400 text-amber-500 hover:bg-amber-400 hover:text-black transition-all duration-300 px-6 py-5 text-base font-medium"
             >
               {isExpanded ? (
                 <>

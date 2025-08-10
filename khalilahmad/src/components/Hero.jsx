@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="bg-black pt-16 md:pt-20 min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-20 text-white">
+    <div className="bg-zinc-950 pt-16 md:pt-20 min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-20 text-white">
       {/* Mobile Layout - Image first */}
       <div className="lg:hidden w-full flex justify-center mb-8 mt-8">
         <div className="relative">

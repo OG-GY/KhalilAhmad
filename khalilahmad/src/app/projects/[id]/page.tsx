@@ -29,7 +29,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <main className="min-h-screen py-8 bg-gradient-to-br from-background to-amber-50/20 dark:to-amber-950/10">
+    <main className="min-h-screen py-8 bg-gradient-to-br from-black to-amber-950/10">
       <div className="container mx-auto px-4">
         {/* Back Button */}
         <Button variant="ghost" asChild className="mb-8 hover:bg-amber-100 dark:hover:bg-amber-900/30">

@@ -19,19 +19,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
         "group relative overflow-hidden rounded-2xl bg-gradient-to-br p-[1px]",
         "hover:scale-[1.01] transition-all duration-500 ease-out",
         "hover:shadow-2xl",
-        "h-full flex flex-col", // Ensure equal height
+        "h-full flex flex-col",
+        "border-zinc-800 bg-zinc-900/60 transition-colors",
+        "hover:bg-zinc-900 focus-within:bg-zinc-900",
+        "focus-within:ring-2 focus-within:ring-yellow-600/40",
+        "duration-200", // Ensure equal height
       )}
-      style={{
-        background: `linear-gradient(135deg, transparent, #f59e0b15, transparent)`,
-      }}
+      // style={{
+      //   background: `linear-gradient(135deg, transparent, #f59e0b15, transparent)`,
+      // }}
     >
-      <div className="relative h-full overflow-hidden rounded-2xl bg-background/95 backdrop-blur-xl flex flex-col">
+      <div className="relative h-full overflow-hidden rounded-2xl bg-zinc-950/80 backdrop-blur-xl flex flex-col">
         {/* Status Badge */}
         <div className="absolute top-4 right-4 z-10">
           <Badge
             variant={project.status === "completed" ? "default" : "secondary"}
             className={cn(
-              "backdrop-blur-sm bg-background/80 border-0",
+              "backdrop-blur-sm bg-black/80 border-0",
               project.status === "completed" && "bg-amber-500/20 text-amber-700 dark:text-amber-300",
             )}
           >
@@ -41,14 +45,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Image Section */}
         <div className="relative h-48 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-amber-600/5" />
+          <div className="absolute inset-0 bg-black" />
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            className="object-cover transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
           {/* Floating Icons */}
           <div className="absolute top-4 left-4 flex gap-2">
@@ -85,7 +89,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <Badge
                 key={tech}
                 variant="secondary"
-                className="text-xs bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
+                className="text-xs bg-amber-950/40 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
                 style={{
                   animationDelay: `${i * 100}ms`,
                 }}
@@ -94,7 +98,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </Badge>
             ))}
             {project.technologies.length > 4 && (
-              <Badge variant="secondary" className="text-xs bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+              <Badge variant="secondary" className="text-xs bg-amber-950/40 border-2 border-amber-800 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
                 +{project.technologies.length - 4}
               </Badge>
             )}

@@ -41,7 +41,7 @@ export default function Card({ name, image, tags }: CardProps) {
       transitionDuration={800}
       playOnce={false}
     >
-      <div className="bg-white dark:bg-black rounded-lg shadow-md pt-8 pb-5 flex flex-col items-center justify-center w-100 text-center">
+      <div className="bg-black rounded-lg shadow-md pt-8 pb-5 flex flex-col items-center justify-center w-100 text-center border border-gray-700">
         <Image
           src={image}
           alt={name}

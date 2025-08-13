@@ -47,11 +47,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Providers>
-            <div className="min-h-screen bg-gray-900">
+            <div className="min-h-screen bg-zinc-950">
               <ClickSpark
                 sparkColor="#FEA600"
                 sparkSize={10}

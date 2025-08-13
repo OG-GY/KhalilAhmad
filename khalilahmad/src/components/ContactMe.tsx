@@ -6,7 +6,7 @@ import ContactCard from "./ContactComponents/ContactCard";
 
 export default function ContactMe() {
   return (
-    <section id="contact" className="w-full bg-black">
+    <section id="contact" className="w-full bg-zinc-900">
       <div className="text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           

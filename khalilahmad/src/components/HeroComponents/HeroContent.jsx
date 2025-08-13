@@ -21,11 +21,11 @@ const rubik = Rubik_Mono_One({
 export default function HeroContent() {
   return (
     <div className="text-white w-full max-w-md lg:max-w-lg xl:max-w-xl mb-8 lg:mb-0 text-center lg:text-left">
-      <h3 className={`text-lg sm:text-xl md:text-2xl uppercase font-extrabold text-gray-300 ${oswald.className}`}>
+      <h3 className={`text-lg sm:text-xl md:text-2xl uppercase font-extrabold text-zinc-400 ${oswald.className}`}>
         Hello I'm
       </h3>
       
-      <h1 className={`mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-extrabold text-amber-400 leading-tight`}>
+      <h1 className={`mt-0 text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-extrabold text-amber-400 leading-tight`}>
         Khalil <span className="text-white">Ahmad</span>
       </h1>
       
@@ -33,7 +33,7 @@ export default function HeroContent() {
         Full Stack Web Developer
       </h2>
       
-      <h2 className="text-lg sm:text-xl lg:text-xl xl:text-2xl mt-2 lg:mt-3 text-gray-200">
+      <h2 className="text-lg sm:text-xl lg:text-xl xl:text-2xl mt-0 lg:mt-0 text-gray-200">
         I am a{' '}
         <ReactTyped 
           className="text-amber-400 font-medium" 

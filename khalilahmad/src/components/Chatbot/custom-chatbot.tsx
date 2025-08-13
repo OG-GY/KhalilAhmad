@@ -126,7 +126,7 @@ export default function PortfolioChatbot() {
       {/* Chat Interface */}
       <div
         className={cn(
-          "fixed bottom-28 right-8 z-40 w-96 h-[500px] transition-all duration-700 ease-out",
+          "fixed bottom-16 right-8 z-40 w-96 h-[500px] transition-all duration-700 ease-out",
           "bg-black/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 border-amber-500/30",
           "transform origin-bottom-right overflow-hidden",
           isOpen

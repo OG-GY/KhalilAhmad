@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:items-center">
         <div className="relative">
           <Image
-            src="/Images/khalilHero4.png"
+            src="/khalilhero.png"
             width={450}
             height={600}
             alt="Khalil Ahmad"

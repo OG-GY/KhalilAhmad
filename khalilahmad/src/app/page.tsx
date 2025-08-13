@@ -5,7 +5,8 @@ import ThemeToggle from "@/components/ThemeToggle";
 import MyServices from "@/components/MyServices";
 import { TechStackSection } from "@/components/StacksComponents/TechStack";
 import { ContactSection } from "@/components/Contact";
-import { ExperienceSection } from "@/components/Experience"
+// import { ExperienceSection } from "@/components/Experience"
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <ContactSection contactEmail="reachkhalilhere@gmail.com"/>
       {/* <Courses /> */}
       {/* <ContactMe /> */}
+      <Footer/>
     </main>
   );
 }

@@ -131,13 +131,38 @@ export function ContactSection({
     const eMap = validate(form);
     setErrors(eMap);
 
-    if (Object.keys(eMap).length > 0 && !form.company) return;
-
-    try {
-      setSubmitting(true);
-      // Simulate a request. Replace with your API or Server Action later.
-      await new Promise((r) => setTimeout(r, 900));
+    // Honeypot: if filled, treat as spam (auto-succeed, don't send)
+    if (form.company) {
       setSubmitted(true);
+      return;
+    }
+
+    if (Object.keys(eMap).length > 0) return;
+
+    setSubmitting(true);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          projectType: form.projectType,
+          budget: form.budget,
+          timeline: form.timeline,
+          url: form.url,
+          message: form.message,
+          honeypot: '', // not used, but for API compatibility
+        }),
+      });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setSubmitted(true);
+      } else {
+        setErrors((prev) => ({ ...prev, api: result.error || 'Failed to send message.' }));
+      }
+    } catch (err) {
+      setErrors((prev) => ({ ...prev, api: 'Failed to send message. Please try again later.' }));
     } finally {
       setSubmitting(false);
     }
@@ -560,6 +585,9 @@ export function ContactSection({
                   <p className="text-xs text-zinc-400">
                     Please correct the highlighted fields and try again.
                   </p>
+                )}
+                {errors.api && (
+                  <p className="text-xs text-red-500">{errors.api}</p>
                 )}
               </div>
             </form>

@@ -3,7 +3,7 @@ import CountUp from "../ui/Count";
 
 export default function HeroStat({ upper, count, lower, string }) {
   return (
-    <div className="flex flex-col items-center text-center p-2 sm:p-3">
+    <div className="flex flex-col items-center text-center p-2 sm:p-3 bg-zinc-900 rounded-xl">
       <p className="text-xs sm:text-sm text-gray-200 underline mb-1">
         {upper}
       </p>

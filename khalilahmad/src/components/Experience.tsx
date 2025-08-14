@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -116,7 +116,7 @@ export function ExperienceSection({
 
 function TimelineItem({
   item,
-  index,
+  // index,
   defaultCollapsedCount,
 }: {
   item: ExperienceItem;
@@ -163,7 +163,7 @@ function TimelineItem({
             )}
             aria-hidden="true"
           >
-            <orgIcon className="h-5 w-5" />
+            {React.createElement(orgIcon, { className: "h-5 w-5" })}
           </span>
 
           <div className="min-w-0 flex-1">

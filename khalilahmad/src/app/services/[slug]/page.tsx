@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft, Check, Star, Quote, ArrowRight, Users, Clock, Award } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
+import {Footer} from "@/components/Footer"
 
 export default function ServiceDetailPage() {
   const params = useParams();
@@ -27,14 +28,14 @@ export default function ServiceDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-black via-gray-900 to-black py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-black py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Back Button */}
           <Link 
             href="/#services" 
-            className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors mb-8 hover:bg-zinc-900/70 px-4 py-2 rounded-md duration-200"
           >
             <ArrowLeft className="h-5 w-5" />
             Back to Services
@@ -47,7 +48,7 @@ export default function ServiceDetailPage() {
                   {service.icon && <service.icon size={40} />}
                 </div>
                 <div>
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
+                  <h1 className="text-4xl sm:text-5xl lg:text-4xl font-bold text-white mb-2">
                     {service.name}
                   </h1>
                   <p className="text-xl text-amber-400 font-medium">
@@ -77,7 +78,7 @@ export default function ServiceDetailPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-800">
+            <div className=" border-amber-600 bg-zinc-950 p-8 rounded-xl border ">
               <h3 className="text-2xl font-bold mb-6 text-center">Quick Stats</h3>
               <div className="grid grid-cols-1 gap-6">
                 <div className="flex items-center gap-4">
@@ -108,7 +109,7 @@ export default function ServiceDetailPage() {
       </section>
 
       {/* Navigation Tabs */}
-      <section className="bg-gray-900/30 border-b border-gray-800">
+      <section className="bg-black border-b border-amber-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex space-x-8 overflow-x-auto">
             {[
@@ -146,7 +147,7 @@ export default function ServiceDetailPage() {
                 {service.technologies.map((tech, index) => (
                   <div 
                     key={index}
-                    className="bg-gray-900/50 p-4 rounded-lg text-center border border-gray-800 hover:border-amber-400 transition-colors"
+                    className="bg-zinc-900/50 cursor-pointer p-4 rounded-lg text-center border border-zinc-800 hover:border-amber-400 transition-colors"
                   >
                     <span className="font-medium">{tech}</span>
                   </div>
@@ -308,31 +309,7 @@ export default function ServiceDetailPage() {
       </div>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-amber-400 to-yellow-500 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-black/80 mb-8">
-            Let&apos;s discuss your project and bring your ideas to life.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/#contact" 
-              className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-900 transition-colors inline-flex items-center justify-center gap-2"
-            >
-              Start Your Project
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link 
-              href="/#contact" 
-              className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-colors inline-flex items-center justify-center"
-            >
-              Schedule Consultation
-            </Link>
-          </div>
-        </div>
-      </section>
+      <Footer/>
     </div>
   );
 }

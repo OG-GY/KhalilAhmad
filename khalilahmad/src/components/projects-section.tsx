@@ -37,9 +37,9 @@ export function ProjectsSection() {
     >
       <div className="max-w-7xl mx-auto">
         <header className="mb-8">
-          <h1 className="text-6xl font-bold tracking-tight">Services</h1>
-          <p className="mt-1 text-sm text-zinc-400">
-            What I can help you build — crafted with precision and performance.
+          <h1 className="text-6xl font-bold tracking-tight">Projects</h1>
+          <p className="mt-2 text-sm text-zinc-400">
+            What I have build so far, with my fascinating skills.
           </p>
         </header>
 

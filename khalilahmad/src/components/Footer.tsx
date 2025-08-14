@@ -215,8 +215,8 @@ export function Footer({
                   <Coffee className="h-5 w-5" />
                 </span>
                 <div>
-                  <h3 className="text-base font-medium text-zinc-100">Let's work together</h3>
-                  <p className="text-sm text-zinc-400">Have a project in mind? I'd love to hear about it.</p>
+                  <h3 className="text-base font-medium text-zinc-100">Let&apos;s work together</h3>
+                  <p className="text-sm text-zinc-400">Have a project in mind? I&apos;d love to hear about it.</p>
                 </div>
               </div>
               <div className="flex gap-2">

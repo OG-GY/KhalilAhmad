@@ -43,7 +43,7 @@ type FormState = {
   company: string; // honeypot
 };
 
-type FormErrors = Partial<Record<keyof FormState, string>>;
+type FormErrors = Partial<Record<keyof FormState, string>> & { api?: string };
 
 const containerVariants: Variants = {
   hidden: {},
@@ -161,7 +161,7 @@ export function ContactSection({
       } else {
         setErrors((prev) => ({ ...prev, api: result.error || 'Failed to send message.' }));
       }
-    } catch (err) {
+    } catch (_err) {
       setErrors((prev) => ({ ...prev, api: 'Failed to send message. Please try again later.' }));
     } finally {
       setSubmitting(false);

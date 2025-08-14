@@ -29,10 +29,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <main className="min-h-screen py-8 bg-gradient-to-br from-black to-amber-950/10">
+    <main className="min-h-screen py-8 bg-zinc-950">
       <div className="container mx-auto px-4">
         {/* Back Button */}
-        <Button variant="ghost" asChild className="mb-8 hover:bg-amber-100 dark:hover:bg-amber-900/30">
+        <Button variant="ghost" asChild className="mb-8 hover:bg-zinc-900/70 hover:text-white">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Projects
@@ -51,7 +51,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               }
               className={
                 project.status === "completed" 
-                  ? "bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-300" 
+                  ? "bg-amber-500/20 text-white dark:text-white border-amber-500" 
                   : project.status === "prototype"
                   ? "bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-300"
                   : ""
@@ -105,17 +105,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
 
             {/* Description */}
-            <Card className="mb-8 border-amber-200 dark:border-yellow-400">
+            <Card className="mb-8 bg-black border-2 border-zinc-800">
               <CardHeader>
                 <CardTitle className="text-amber-600 dark:text-amber-300">About This Project</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">{project.longDescription}</p>
+                <p className="text-gray-300 leading-relaxed">{project.longDescription}</p>
               </CardContent>
             </Card>
 
             {/* Features */}
-            <Card className="border-yellow-400 dark:border-yellow-400">
+            <Card className="bg-black border-2 border-zinc-800">
               <CardHeader>
                 <CardTitle className="text-amber-600 dark:text-amber-300">Key Features</CardTitle>
               </CardHeader>
@@ -124,7 +124,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   {project.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <div className="mt-2 h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">{feature}</span>
+                      <span className="text-sm text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -135,14 +135,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Technologies */}
-            <Card className="border-amber-200 dark:border-yellow-400">
+            <Card className="bg-black border-2 border-zinc-800">
               <CardHeader>
                 <CardTitle className="text-amber-600 dark:text-amber-300">Technologies Used</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+                    <Badge key={tech} variant="secondary" className="bg-amber-500/20 border-amber-500 text-white dark:bg-amber-900/30 dark:text-amber-200">
                       {tech}
                     </Badge>
                   ))}
@@ -220,19 +220,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Card> */}
 
             {/* Project Info */}
-            <Card>
+            <Card className="bg-black border-2 border-zinc-800">
               <CardHeader>
-                <CardTitle>Project Info</CardTitle>
+                <CardTitle className=" text-amber-500">Project Info</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <h4 className="text-sm font-semibold">Status</h4>
-                  <p className="text-sm text-muted-foreground capitalize">{project.status.replace("-", " ")}</p>
+                  <h4 className="text-sm font-semibold text-amber-500">Status</h4>
+                  <p className="text-sm capitalize text-gray-300">{project.status.replace("-", " ")}</p>
                 </div>
                 <Separator />
                 <div>
-                  <h4 className="text-sm font-semibold">Type</h4>
-                  <p className="text-sm text-muted-foreground">Full Stack Web Application</p>
+                  <h4 className="text-sm font-semibold text-amber-500">Type</h4>
+                  <p className="text-sm text-gray-300">Full Stack Web Application</p>
                 </div>
               </CardContent>
             </Card>

@@ -2,6 +2,7 @@
 import {Oswald, Merriweather_Sans, Rubik_Mono_One } from "next/font/google";
 import { PhoneForwarded } from 'lucide-react';
 import {ReactTyped} from "react-typed";
+import { User } from 'lucide-react';
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -44,14 +45,15 @@ export default function HeroContent() {
         />
       </h2>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start mt-6 lg:mt-8 gap-3 sm:gap-4">
-        <button className={`${merri.className} w-full sm:w-auto leading-none cursor-pointer bg-amber-400 text-black px-6 sm:px-8 py-3 rounded-lg font-medium hover:bg-transparent hover:text-amber-400 hover:border-2 hover:border-amber-400 hover:scale-105 transition-all duration-300`}>
-          Hire Me
+      <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start mt-6 lg:mt-8 gap-1 sm:gap-2">
+        <button className={`${merri.className} flex items-center justify-center gap-2 w-full sm:w-auto leading-none cursor-pointer bg-amber-400 text-black px-4 py-3 sm:px-6 rounded-lg font-medium hover:bg-transparent hover:text-amber-400 hover:border-2 hover:border-amber-400 hover:scale-105 transition-all duration-300`}>
+          <User className="h-4 w-4" />
+          <span>Hire Me</span>
         </button>
         
-        <button className="w-full sm:w-auto cursor-pointer border-2 border-amber-400 text-amber-400 px-4 py-3 rounded-lg hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2">
+        <button className="w-full sm:w-auto cursor-pointer border-2 border-amber-400 text-amber-400 px-4 py-2 rounded-lg hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2">
           <PhoneForwarded className="h-4 w-4" />
-          <span className="sm:hidden">Contact</span>
+          <span className="">Contact</span>
         </button>
       </div>
     </div>

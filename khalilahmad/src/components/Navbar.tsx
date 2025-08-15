@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [mobMenuOpen, setMobMenuOpen] = useState(false);
@@ -88,18 +89,20 @@ export default function Navbar() {
 
         {/* Desktop CTA Button */}
         <div className="hidden lg:flex items-center">
-          <motion.button
-            className="bg-amber-400 hover:bg-amber-500 px-4 py-2 rounded-lg text-black font-medium 
-                     transition-all duration-300 cursor-pointer flex items-center gap-2"
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Download className="h-4 w-4" />
-            Download CV
-          </motion.button>
+          <a href="/Khalil%20Ahmad.pdf" download>
+            <motion.button
+              className="bg-amber-400 hover:bg-amber-500 px-4 py-2 rounded-lg text-black font-medium 
+                       transition-all duration-300 cursor-pointer flex items-center gap-2"
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="h-4 w-4" />
+              Download CV
+            </motion.button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -155,18 +158,20 @@ export default function Navbar() {
                 ))}
                 
                 {/* Mobile Full CTA Button */}
-                <motion.button
-                  className="bg-amber-400 hover:bg-amber-500 px-4 py-3 rounded-lg text-black font-medium 
-                           transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 mt-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.5 }}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Download className="h-4 w-4" />
-                  Download CV
-                </motion.button>
+                <a href="/Khalil%20Ahmad.pdf" download>
+                  <motion.button
+                    className="bg-amber-400 hover:bg-amber-500 px-4 py-3 rounded-lg text-black font-medium 
+                             transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 mt-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: 0.5 }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Download className="h-4 w-4" />
+                    Download CV
+                  </motion.button>
+                </a>
               </div>
             </div>
           </motion.div>

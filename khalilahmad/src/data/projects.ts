@@ -17,7 +17,7 @@ export const projects: Project[] = [
     },
     links: {
       live: "https://uni-sphere-ashy.vercel.app/login",
-      github: "https://github.com/username/uni-sphere"
+      github: "https://github.com/OG-GY/Uni-Sphere.git"
     },
     features: [
       "Multi-community support",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "Clean and accessible UI"
     ],
     status: "completed" ,
-    year: 2024,
+    year: 2025,
     category: "Web Platform",
     color: "#FF5733"
   },
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       tools: ["GitHub"]
     },
     links: {
-      github: "https://github.com/username/past-paper-extractor"
+      live:"https://github.com/OG-GY/PastPaperExtractor"
     },
     status: "prototype" ,
     features: [
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "Searchable past paper database",
       "Categorization by semester, subject, teacher"
     ],
-    year: 2023,
+    year: 2024,
     category: "OCR Tool",
     color: "#4B8BBE"
   },
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     },
     links: {
       live: "https://bulk-email-sender.vercel.app",
-      github: "https://github.com/username/bulk-email-sender"
+      github: "https://github.com/OG-GY/MultipleEmailsSender"
     },
     features: [
       "Custom email templates",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "HTML and plain-text support"
     ],
     status: "completed" ,
-    year: 2023,
+    year: 2024,
     category: "Utility",
     color: "#28B463"
   },
@@ -98,8 +98,7 @@ export const projects: Project[] = [
       tools: ["Vercel", "Git"]
     },
     links: {
-      live: "https://uet-game-portfolio.vercel.app",
-      github: "https://github.com/username/uet-portfolio"
+      live: "https://uetgamstudio.com",
     },
     features: [
       "Game showcase",
@@ -126,8 +125,7 @@ export const projects: Project[] = [
       tools: ["Vercel", "Git"]
     },
     links: {
-      live: "https://uet-game-portfolio.vercel.app",
-      github: "https://github.com/username/uet-portfolio"
+      live: "https://portfolio.uetgamstudio.com",
     },
     features: [
       "Game showcase",
@@ -154,7 +152,7 @@ export const projects: Project[] = [
       tools: ["PyQT5"]
     },
     links: {
-      github: "https://github.com/username/nexus-editor"
+      github: "https://github.com/OG-GY/Nexus-Editor"
     },
     features: [
       "Syntax highlighting",
@@ -162,7 +160,7 @@ export const projects: Project[] = [
       "DSA-integrated examples"
     ],
     status: "completed" ,
-    year: 2022,
+    year: 2024,
     category: "Desktop App",
     color: "#F1C40F"
   },
@@ -179,7 +177,7 @@ export const projects: Project[] = [
       tools: ["PyQT5", "Threads"]
     },
     links: {
-      github: "https://github.com/username/honey-scraper"
+      github: "https://github.com/OG-GY/Honey-Scraper"
     },
     features: [
       "Multi-threaded scraping",
@@ -187,7 +185,7 @@ export const projects: Project[] = [
       "Error handling for large-scale requests"
     ],
     status: "completed" ,
-    year: 2022,
+    year: 2023,
     category: "Scraper",
     color: "#2E86C1"
   },
@@ -206,7 +204,7 @@ export const projects: Project[] = [
       tools: ["SSMS"]
     },
     links: {
-      github: "https://github.com/username/annexxie-cafe"
+      github: "https://github.com/OG-GY/Annexxie"
     },
     features: [
       "Admin and User portals",
@@ -230,7 +228,7 @@ export const projects: Project[] = [
       frontend: ["HTML", "CSS", "JavaScript", "JQuery"]
     },
     links: {
-      github: "https://github.com/username/personal-portfolio"
+      github: "https://github.com/OG-GY/Khalil-Ahmad"
     },
     features: [
       "Multi-page layout",

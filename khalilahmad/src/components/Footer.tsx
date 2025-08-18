@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Mail, Github, Linkedin, Twitter, Globe, ArrowUpRight, Heart, Code, Coffee, MapPin } from "lucide-react"
+import { socials } from "@/data/socials"
 
 export type FooterProps = {
   className?: string
@@ -50,20 +51,19 @@ const availabilityConfig = {
 export function Footer({
   className,
   name = "Khalil Ahmad",
-  tagline = "Full‑Stack Developer & UI/UX Designer",
-  email = "reachkhalilhere@gmail.com",
-  location = "Lahore, Pakistan",
+  tagline = "Full‑Stack Web Developer",
+  email = socials.gmail,
+  location = socials.location,
   socialLinks = {
-    github: "https://github.com/khalil-ahmad",
-    linkedin: "https://linkedin.com/in/khalil-ahmad",
-    twitter: "https://twitter.com/khalil_ahmad",
+    github: socials.github,
+    linkedin: socials.linkedin,
     website: "https://khalil-ahmad.vercel.app",
   },
   quickLinks = [
-    { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
     { label: "Experience", href: "/experience" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "#contact" },
   ],
   services = [
     { label: "Full‑Stack Development", href: "/services/full-stack-development" },
@@ -219,7 +219,7 @@ export function Footer({
                   <p className="text-sm text-zinc-400">Have a project in mind? I&apos;d love to hear about it.</p>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <Button asChild variant="secondary" className="border-yellow-700/50 bg-zinc-950 text-yellow-600">
                   <Link href={`mailto:${email}`}>
                     <Mail className="mr-1.5 h-4 w-4" />
@@ -253,7 +253,7 @@ export function Footer({
               <Link href="/terms" className="transition-colors hover:text-yellow-600">
                 Terms
               </Link>
-              <span>Built with Next.js & Tailwind</span>
+              <span>Built with Next.js</span>
             </div>
           </motion.div>
         </motion.div>

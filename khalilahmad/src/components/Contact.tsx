@@ -22,6 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { socials } from "@/data/socials";
 
 type ContactSectionProps = {
   className?: string;
@@ -65,8 +66,8 @@ const itemVariants: Variants = {
 export function ContactSection({
   className,
   title = "Contact Me",
-  subtitle = "Tell me about your project. I typically reply within 24 hours.",
-  contactEmail = "reachkhalilhere@gmail.com",
+  subtitle = "Tell me about your project. I typically reply within 12 hours.",
+  contactEmail = socials.gmail,
   schedulingUrl = "#",
 }: ContactSectionProps) {
   const shouldReduceMotion = useReducedMotion();
@@ -177,7 +178,7 @@ export function ContactSection({
         )}
         aria-labelledby="contact-title"
       >
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60 p-8">
             {/* Accent elements */}
             <div
@@ -202,7 +203,7 @@ export function ContactSection({
                     Thanks — your message is on its way
                   </h2>
                   <p className="mt-1 text-sm text-zinc-400">
-                    I’ll review your details and get back to you within one
+                    I’ll review your details and get back to you within half
                     business day.
                   </p>
                 </div>
@@ -291,7 +292,7 @@ export function ContactSection({
                   className="mt-0.5 h-4 w-4 text-yellow-600"
                   aria-hidden="true"
                 />
-                <span>Response in 24h, Mon–Fri.</span>
+                <span>Response in 12h, Mon–Fri.</span>
               </li>
               <li className="flex items-start gap-2">
                 <CalendarClock

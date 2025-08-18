@@ -4,6 +4,7 @@ import { addToast, ToastProvider } from "@heroui/toast";
 import { Github, Linkedin, Instagram, Facebook, MailOpen } from 'lucide-react';
 import { Oswald } from "next/font/google";
 import { Tooltip } from "@heroui/react";
+import { socials } from "@/data/socials";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -12,11 +13,11 @@ const oswald = Oswald({
 
 export default function HeroAbout() {
   const Socials = [
-    { name: "Github", color: "warning", icon: Github, link: "https://github.io/OG-GY" },
-    { name: "Linkedin", color: "warning", icon: Linkedin, link: "https://www.linkedin.com/in/khalil-ahmad-411270260/" },
-    { name: "Instagram", color: "warning", icon: Instagram, link: "https://" },
-    { name: "Facebook", color: "warning", icon: Facebook, link: "https://web.facebook.com/khalil.ahmad.916877" },
-    { name: "Gmail", color: "warning", icon: MailOpen, copy: "reachkhalilhere@gmail.com" },
+    { name: "Github", color: "warning", icon: Github, link: socials.github },
+    { name: "Linkedin", color: "warning", icon: Linkedin, link: socials.linkedin },
+    { name: "Instagram", color: "warning", icon: Instagram, link: socials.instagram },
+    { name: "Facebook", color: "warning", icon: Facebook, link: socials.facebook },
+    { name: "Gmail", color: "warning", icon: MailOpen, copy: socials.gmail },
   ];
 
   return (

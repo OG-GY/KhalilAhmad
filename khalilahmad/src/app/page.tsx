@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { ProjectsSection } from "@/components/projects-section";
 import MyServices from "@/components/MyServices";
-import { TechStackSection } from "@/components/StacksComponents/TechStack";
 import { ContactSection } from "@/components/Contact";
+import { TechStackSection } from "@/components/tech-stack-section";
 // import { ExperienceSection } from "@/components/Experience"
 import { Footer } from "@/components/Footer";
 
@@ -25,7 +25,7 @@ export default function Home() {
       <ProjectsSection/>
       {/* <ExperienceSection/> */}
       {/* <Stacks /> */}
-      <TechStackSection/>
+      <TechStackSection defaultCategory="Tech Stack"/>
       <ContactSection contactEmail="reachkhalilhere@gmail.com"/>
       {/* <Courses /> */}
       {/* <ContactMe /> */}

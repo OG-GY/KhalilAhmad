@@ -46,7 +46,7 @@ export default function MyServices() {
             price="Project‑based"
           />
           <ServiceCard
-            title="APIs & Integrations"
+            title="Web Scraping"
             description="Reliable integrations with third‑party services and robust API architectures."
             icon={ServerCog}
             highlights={["Auth & Security", "Third‑party APIs", "Webhooks", "Monitoring & Logs"]}

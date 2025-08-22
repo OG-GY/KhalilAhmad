@@ -38,7 +38,7 @@ export default function HeroContent() {
         I am a{' '}
         <ReactTyped 
           className="text-amber-400 font-medium" 
-          strings={["UI/UX Designer", "Frontend Developer", "Backend Developer", "Problem Solver"]}
+          strings={["UI/UX Designer", "Frontend Developer", "Backend Developer"]}
           typeSpeed={50}
           backSpeed={30}
           loop 

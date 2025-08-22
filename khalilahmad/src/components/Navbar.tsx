@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Navbar() {
   const [mobMenuOpen, setMobMenuOpen] = useState(false);
@@ -36,9 +36,9 @@ export default function Navbar() {
 
   const Navitems = [
     { name: "Home", id: "home" },
-    { name: "About", id: "about" },
-    { name: "Skills", id: "skills" },
+    { name: "Services", id: "services" },
     { name: "Projects", id: "projects" },
+    { name: "Technologies", id: "technologies" },
     { name: "Contact", id: "contact" },
   ];
 

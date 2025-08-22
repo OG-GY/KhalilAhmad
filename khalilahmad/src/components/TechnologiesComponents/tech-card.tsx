@@ -1,19 +1,19 @@
 "use client"
 
-import { motion, useReducedMotion } from "framer-motion"
+import { motion, useReducedMotion, type Variants } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Clock, Briefcase } from "lucide-react"
 import type { TechCardProps } from "@/types/technologies"
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 12, scale: 0.98 },
   show: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.45, ease: "easeOut" },
   },
 }
 

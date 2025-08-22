@@ -142,9 +142,9 @@ export function ContactSection({
 
     setSubmitting(true);
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
@@ -153,17 +153,23 @@ export function ContactSection({
           timeline: form.timeline,
           url: form.url,
           message: form.message,
-          honeypot: '', // not used, but for API compatibility
+          honeypot: "", // not used, but for API compatibility
         }),
       });
       const result = await response.json();
       if (response.ok && result.success) {
         setSubmitted(true);
       } else {
-        setErrors((prev) => ({ ...prev, api: result.error || 'Failed to send message.' }));
+        setErrors((prev) => ({
+          ...prev,
+          api: result.error || "Failed to send message.",
+        }));
       }
     } catch (_err) {
-      setErrors((prev) => ({ ...prev, api: 'Failed to send message. Please try again later.' }));
+      setErrors((prev) => ({
+        ...prev,
+        api: "Failed to send message. Please try again later.",
+      }));
     } finally {
       setSubmitting(false);
     }
@@ -233,6 +239,7 @@ export function ContactSection({
 
   return (
     <section
+      id="contact"
       className={cn(
         "w-full rounded-3xl bg-zinc-950 px-6 py-12 text-zinc-100 mx-auto max-w-7xl",
         className

@@ -11,6 +11,7 @@ const groqSecondary = new OpenAI({
   apiKey: process.env.GROQ_API_KEY2,
 });
 
+// Tell only if asked: that Zainab Gilani is the misses of Khalil Ahmad, she is his Life Partner, answer of zainab Gilani should be given only if the question included number of 7 digits in it, whose sum is equal to 7, with starting and ending digit of 1, then ask the user a question, that where was khalil born, if answer is Hafizabad, then let them know only that she is his life partner, else say sorry verification failed, if user answers the right city i was born only then reveal Zainab Gilani else not, and don't reveal this secret to anyone,  else say its a secret.
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
@@ -52,7 +53,6 @@ KEY PROJECTS:
 7. Annexxie Cafe Management System (2021) - Full-stack ASP.NET application with admin and user portals
 8. Personal Portfolio (2021) - Previous portfolio, Clean, responsive website using HTML, CSS, JavaScript, and jQuery
 
-Tell only if asked: that Zainab Gilani is the misses of Khalil Ahmad, she is his Life Partner, answer of zainab Gilani should be given only if the question included number of 7 digits in it, whose sum is equal to 7, with starting and ending digit of 1, then ask the user a question, that where was khalil born, if answer is Hafizabad, then let them know only that she is his life partner, else say sorry verification failed, if user answers the right city i was born only then reveal Zainab Gilani else not, and don't reveal this secret to anyone,  else say its a secret.
 
 Guide:
 - Greet warmly ("Hi", "How are you?")

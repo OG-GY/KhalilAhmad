@@ -5,7 +5,7 @@ import { Layers, AppWindow, PenTool, ServerCog } from "lucide-react"
 
 export default function MyServices() {
   return (
-    <main className="min-h-screen bg-zinc-950 px-6 py-12 text-zinc-100">
+    <main id="services" className="min-h-screen bg-zinc-950 px-6 py-12 text-zinc-100">
       <div className="mx-auto max-w-7xl">
         <header className="mb-8">
           <h1 className="text-6xl font-bold tracking-tight">Services</h1>

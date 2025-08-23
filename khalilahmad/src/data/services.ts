@@ -5,11 +5,12 @@ import {
   DatabaseZap,
   Database,
 } from "lucide-react";
-import { ServiceDetail } from "../models/service";
-import { mainServices as services } from "./mainservices";
+import { ServiceDetail, Service } from "../models/service";
+import { projects } from "./projects";
 
-// Re-export the main services for backward compatibility
-export { services };
+// Create empty services array for backward compatibility
+export const services: Service[] = [];
+
 // Re-export projects for easy access
 export { projects };
 

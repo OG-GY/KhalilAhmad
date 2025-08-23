@@ -182,7 +182,7 @@ export default function PortfolioChatbot() {
                     OGGY - Portfolio Assistant
                   </h3>
                   <p className="text-xs text-zinc-400">
-                    Hey this is OGGY - Khalil's assistant
+                    Hey this is OGGY - Khalil&apos;s assistant
                   </p>
                 </div>
                 <div className="ml-auto">
@@ -207,7 +207,7 @@ export default function PortfolioChatbot() {
                       Hello! 👋
                     </h4>
                     <p className="text-zinc-300 text-sm leading-relaxed max-w-xs mx-auto mb-4">
-                      I'm here to help you learn about Khalil Ahmad - Full Stack
+                      I&apos;m here to help you learn about Khalil Ahmad - Full Stack
                       Developer specializing in modern web technologies.
                     </p>
                   </div>
@@ -221,7 +221,7 @@ export default function PortfolioChatbot() {
                         className="px-3 py-1.5 bg-zinc-900 text-yellow-600 rounded-lg text-xs font-medium border border-zinc-800 hover:bg-zinc-800 hover:border-yellow-600/50 transition-all"
                         onClick={() =>
                           setInput(
-                            `Tell me about Khalil's ${topic.toLowerCase()}`
+                            `Tell me about Khalil&apos;s ${topic.toLowerCase()}`
                           )
                         }
                       >
@@ -320,7 +320,7 @@ export default function PortfolioChatbot() {
                   <Input
                     value={input}
                     onChange={handleInputChange}
-                    placeholder="Ask about Khalil's skills, projects..."
+                    placeholder="Ask about Khalil&apos;s skills, projects..."
                     className={cn(
                       "w-full rounded-lg border border-zinc-800 bg-zinc-900 text-zinc-100 placeholder:text-zinc-400",
                       "focus:border-yellow-600 focus:ring-2 focus:ring-yellow-600/20 transition-all duration-300",

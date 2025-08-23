@@ -217,12 +217,42 @@ export const projects: Project[] = [
     color: "#F39C12"
   },
   {
+    id: "school-lama-backend",
+    title: "School Lama - Backend",
+    description: "A backend server with integrated database for managing a complete school including parent, teacher, student and principal.",
+    longDescription:
+      "Developed a comprehensive backend server in Next.js with integrated APIs and PostgreSQL database for complete school management. Efficiently manages all exam timings, lectures, announcements and results across different user roles including parents, teachers, students and principals.",
+    image: "/Projects/schoollama.png",
+    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+    techStack: {
+      frontend: [],
+      backend: ["Next.js API Routes", "TypeScript", "Prisma ORM"],
+      database: ["PostgreSQL"],
+      tools: ["Git"]
+    },
+    links: {
+      github: "https://github.com/OG-GY/School-Lama-Backend"
+    },
+    features: [
+      "Multi-role user management (Parent, Teacher, Student, Principal)",
+      "Exam scheduling and management",
+      "Lecture planning and tracking",
+      "Announcements system",
+      "Results management",
+      "RESTful API endpoints"
+    ],
+    status: "completed",
+    year: 2024,
+    category: "Backend System",
+    color: "#3498DB"
+  },
+  {
     id: "personal-portfolio",
     title: "Personal Portfolio (Khalil Ahmad)",
     description: "A personal web portfolio highlighting projects and professional journey.",
     longDescription:
       "Crafted a clean, multi-page portfolio website from scratch using HTML, CSS, JS, and JQuery. Highlighted community contributions, major projects, and embedded GitHub/LinkedIn integrations to build personal branding.",
-    image: "/images/personal-portfolio.png",
+    image: "/Projects/portfolio.png",
     technologies: ["HTML", "CSS", "JavaScript", "JQuery"],
     techStack: {
       frontend: ["HTML", "CSS", "JavaScript", "JQuery"]

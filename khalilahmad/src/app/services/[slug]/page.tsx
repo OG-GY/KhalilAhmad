@@ -28,9 +28,9 @@ export default function ServiceDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="bg-black py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#09090B] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Back Button */}
           <Link 
@@ -84,7 +84,7 @@ export default function ServiceDetailPage() {
                 <div className="flex items-center gap-4">
                   <Users className="h-8 w-8 text-amber-400" />
                   <div>
-                    <p className="font-semibold">50+ Projects Completed</p>
+                    <p className="font-semibold">10+ Projects Completed</p>
                     <p className="text-gray-400 text-sm">Satisfied clients worldwide</p>
                   </div>
                 </div>

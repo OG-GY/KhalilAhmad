@@ -6,6 +6,7 @@ import { ContactSection } from "@/components/Contact";
 import { TechStackSection } from "@/components/tech-stack-section";
 // import { ExperienceSection } from "@/components/Experience"
 import { Footer } from "@/components/Footer";
+import { EventsSection } from "@/components/EventSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <Services /> */}
       <MyServices/>
       <ProjectsSection/>
+      <EventsSection/>
       {/* <ExperienceSection/> */}
       {/* <Stacks /> */}
       <TechStackSection defaultCategory="Tech Stack"/>

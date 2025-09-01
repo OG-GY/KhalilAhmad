@@ -57,8 +57,6 @@ const itemVariants: Variants = {
 
 export function CommunitySection({
   items = defaultCommunities,
-  title = "Community Work",
-  subtitle = "Building connections, leading initiatives, and creating impact through community engagement.",
   className,
 }: CommunitySectionProps) {
   const shouldReduceMotion = useReducedMotion();

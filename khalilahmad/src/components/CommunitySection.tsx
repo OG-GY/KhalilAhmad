@@ -143,10 +143,10 @@ function CommunityCard({ community }: { community: CommunityItem }) {
               <Users className="h-6 w-6" />
             </span>
             <div>
-              <h3 className="text-lg font-semibold text-zinc-100">
+              <h3 className="text-2xl font-semibold text-zinc-100">
                 {community.name}
               </h3>
-              <p className="text-sm text-zinc-400">{community.description}</p>
+              {/* <p className="text-sm text-zinc-400">{community.description}</p> */}
             </div>
           </div>
 
@@ -177,7 +177,7 @@ function CommunityCard({ community }: { community: CommunityItem }) {
         </div>
 
         {/* Tags */}
-        {community.tags && community.tags.length > 0 && (
+        {/* {community.tags && community.tags.length > 0 && (
           <div className="mt-3 flex flex-wrap gap-2">
             {community.tags.map((tag) => (
               <Badge
@@ -189,7 +189,7 @@ function CommunityCard({ community }: { community: CommunityItem }) {
               </Badge>
             ))}
           </div>
-        )}
+        )} */}
       </header>
 
       {/* Impact Metrics */}
@@ -200,10 +200,10 @@ function CommunityCard({ community }: { community: CommunityItem }) {
               key={index}
               className="rounded-lg border border-zinc-800 bg-zinc-950/60 p-3 text-center"
             >
-              <div className="text-lg font-semibold text-yellow-600">
+              <div className="text-2xl font-bold text-yellow-600">
                 {metric.value}
               </div>
-              <div className="text-xs text-zinc-400">{metric.label}</div>
+              <div className="text-sm text-zinc-400">{metric.label}</div>
             </div>
           ))}
         </div>
@@ -234,9 +234,12 @@ function CommunityCard({ community }: { community: CommunityItem }) {
                   )}
                 />
 
+
+                  <div>
+
                 <div className="rounded-lg border border-zinc-800 bg-zinc-950/40 p-4">
                   <div className="flex items-center justify-between gap-2">
-                    <h5 className="font-medium text-zinc-100">{role.title}</h5>
+                    <h5 className="font-medium text-xl text-zinc-100">{role.title}</h5>
                     {role.end?.toLowerCase() === "present" && (
                       <Badge className="h-5 border-yellow-700/50 bg-zinc-950 px-2 text-[10px] text-yellow-600">
                         Current
@@ -250,14 +253,16 @@ function CommunityCard({ community }: { community: CommunityItem }) {
                       {role.start} — {role.end || "Present"}
                     </span>
                   </div>
+                  </div>
+
 
                   {role.description && (
-                    <p className="mt-2 text-sm text-zinc-300">
+                    <p className="mt-2 text-sm text-zinc-400">
                       {role.description}
                     </p>
                   )}
 
-                  {role.achievements && role.achievements.length > 0 && (
+                  {/* {role.achievements && role.achievements.length > 0 && (
                     <div className="mt-3">
                       {role.achievements.length > 0 ? (
                         <ul className="space-y-1 text-xs text-zinc-400">
@@ -281,7 +286,7 @@ function CommunityCard({ community }: { community: CommunityItem }) {
                         </ul>
                       )}
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
@@ -331,7 +336,7 @@ const defaultCommunities: CommunityItem[] = [
         start: "Oct 2024",
         end: "March 2025",
         description:
-          "Led the entire MLSA chapter's creative teams part, overseeing all creative and graphics initiatives.",
+          "Led the entire MLSA chapter's creative teams part, overseeing all 35+ creative and graphics initiatives with 10+ team members.",
         achievements: [
           "Increased chapter membership by 200% during tenure",
           "Organized 35+ Events",
@@ -344,7 +349,7 @@ const defaultCommunities: CommunityItem[] = [
         start: "May 2024",
         end: "Oct 2024",
         description:
-          "Active participant in community events and designed posters technical sessions.",
+          "Active participant in community events and designed 20+ posters for technical sessions.",
         achievements: [
           "Completed MLSA ",
           "Participated in 10+ workshops",
@@ -369,7 +374,7 @@ const defaultCommunities: CommunityItem[] = [
         start: "March 2025",
         end: "Present",
         description:
-          "Leading strategic initiatives and community growth programs.",
+          "Leading strategic initiatives and community growth programs with 35+ team members & leads.",
         achievements: [
           "Launched mentorship program connecting 10+ mentors with youth",
           "Organized weekly skill development workshops",
@@ -381,7 +386,7 @@ const defaultCommunities: CommunityItem[] = [
         start: "Sept 2024",
         end: "Feb 2025",
         description:
-          "Managed the complete community by serving as heart of community.",
+          "Managed the complete community by serving as heart of community, led 30+ team members and conducted 35+ events.",
         achievements: [
           "Lead a team of 30+ members and team leads",
           "Organized 35+ events",

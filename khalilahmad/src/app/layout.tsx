@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Providers from "@/app/providers";
 import ClickSpark from "@/components/ui/ClickSpark";
 import PortfolioChatbot from "@/components/Chatbot/custom-chatbot";
+import LenisProvider from "./providers/lenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +19,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Khalil Ahmad - Full Stack Developer & UI/UX Designer",
-  description: "Professional full-stack developer specializing in React, Next.js, Node.js, and modern web technologies. Creating beautiful, responsive applications with exceptional user experiences.",
-  keywords: "full stack developer, web developer, React, Next.js, Node.js, UI/UX design, frontend, backend, JavaScript, TypeScript",
+  description:
+    "Professional full-stack developer specializing in React, Next.js, Node.js, and modern web technologies. Creating beautiful, responsive applications with exceptional user experiences.",
+  keywords:
+    "full stack developer, web developer, React, Next.js, Node.js, UI/UX design, frontend, backend, JavaScript, TypeScript",
   authors: [{ name: "Khalil Ahmad" }],
   creator: "Khalil Ahmad",
   publisher: "Khalil Ahmad",
@@ -27,13 +30,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     title: "Khalil Ahmad - Full Stack Developer & UI/UX Designer",
-    description: "Professional full-stack developer creating beautiful, responsive web applications",
+    description:
+      "Professional full-stack developer creating beautiful, responsive web applications",
     siteName: "Khalil Ahmad Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Khalil Ahmad - Full Stack Developer",
-    description: "Professional full-stack developer creating beautiful, responsive web applications",
+    description:
+      "Professional full-stack developer creating beautiful, responsive web applications",
   },
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
@@ -59,7 +64,10 @@ export default function RootLayout({
                 sparkCount={8}
                 duration={400}
               >
-                {children}
+                {/* <LenisProvider> */}
+                  {children}
+
+                {/* </LenisProvider> */}
               </ClickSpark>
               <PortfolioChatbot />
             </div>

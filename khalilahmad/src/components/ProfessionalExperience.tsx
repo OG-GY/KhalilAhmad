@@ -88,8 +88,6 @@ const itemVariants: Variants = {
 
 export function ProfessionalExperienceSection({
   items = defaultProfessionalExperiences,
-  title = "Professional Experience",
-  subtitle = "Building real-world solutions and growing through hands-on experience.",
   className,
   defaultCollapsedCount = 2,
 }: ProfessionalExperienceSectionProps) {
@@ -103,17 +101,16 @@ export function ProfessionalExperienceSection({
       )}
       aria-labelledby="professional-experience-title"
     >
-      <div className="mx-auto max-w-6xl">
-        <header className="mb-8">
-          <h2
-            id="professional-experience-title"
-            className="text-2xl font-semibold tracking-tight"
-          >
-            {title}
+      <div className="mx-auto max-w-7xl">
+                <div className="mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Professional <span className="text-yellow-400">Experience</span>
           </h2>
-          <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
-        </header>
-
+          <p className="text-gray-400 text-lg max-w-2xl">
+            How much I&#39;ve got from industry.
+          </p>
+        </div>
+        
         <div className="relative">
           {/* Vertical timeline rail */}
           <div
@@ -187,7 +184,7 @@ function ProfessionalTimelineItem({
         className={cn(
           "group relative overflow-hidden rounded-3xl border border-zinc-800 p-8",
           "bg-gradient-to-br from-zinc-900/80 to-zinc-900/40",
-          "transition-all duration-500 hover:scale-[1.02] hover:border-yellow-600/30",
+          "transition-all duration-500 hover:border-yellow-600/30",
           "focus-within:ring-2 focus-within:ring-yellow-600/40",
           // Left accent bar
           "before:absolute before:left-0 before:top-6 before:bottom-6 before:w-1 before:rounded-full before:bg-yellow-600/70 before:content-['']",
@@ -281,7 +278,7 @@ function ProfessionalTimelineItem({
           {/* Role Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h4 className="text-xl font-semibold text-zinc-100">
+              <h4 className="text-xl font-semibold text-zinc-100 ">
                 {currentRole.title}
               </h4>
               <div className="flex items-center gap-4 mt-2 text-sm text-zinc-400">
@@ -290,7 +287,7 @@ function ProfessionalTimelineItem({
                   {currentRole.location ||
                     (currentRole.locationType === "remote"
                       ? "Remote"
-                      : "On-site")}
+                      : "Remote")}
                 </span>
               </div>
             </div>
@@ -300,7 +297,7 @@ function ProfessionalTimelineItem({
                 "px-3 py-1",
                 currentRole.type === "internship" &&
                   "border-blue-600/50 bg-blue-950 text-blue-400",
-                currentRole.type === "full-time" &&
+                currentRole.type === "contract" &&
                   "border-green-600/50 bg-green-950 text-green-400",
                 currentRole.type === "part-time" &&
                   "border-purple-600/50 bg-purple-950 text-purple-400",
@@ -423,10 +420,10 @@ const defaultProfessionalExperiences: ProfessionalExperienceItem[] = [
     tags: ["Game Development", "Web Development", "Full-Stack"],
     roles: [
       {
-        title: "Web Developer Intern",
-        start: "Jun 2024",
-        end: "Aug 2024",
-        type: "internship",
+        title: "Full Stack Web Developer",
+        start: "Nov 2024",
+        end: "Present",
+        type: "part-time",
         locationType: "onsite",
         location: "Lahore, Pakistan",
         description:
@@ -434,23 +431,20 @@ const defaultProfessionalExperiences: ProfessionalExperienceItem[] = [
         technologies: [
           "React",
           "Next.js",
+          "Node.js",
+          "Prisma",
           "TypeScript",
           "Tailwind CSS",
-          "Node.js",
-          "MongoDB",
-          "Three.js",
         ],
         metrics: [
-          { label: "Performance Boost", value: "40%", icon: TrendingUp },
-          { label: "User Engagement", value: "60%", icon: Users },
+          { label: "Projects Involvement", value: "5+", icon: TrendingUp },
+          { label: "Satisfaction", value: "98%", icon: Users },
         ],
         achievements: [
-          "Built responsive game portfolio website with 40% improved loading speed",
-          "Implemented dynamic content management system for game showcases",
-          "Created interactive game demos increasing user engagement by 60%",
-          "Collaborated with game designers to translate concepts into web experiences",
-          "Optimized website SEO resulting in 35% increase in organic traffic",
-          "Developed admin dashboard for easy content updates and game management",
+          "Developed responsive gaming portal with 40% improved loading speed",
+          "Developed Portfolio website for UET Game Studio to incrase online presence by 90%",
+          "Leading startup project team of UET Game Studio",
+          "Collaborated with game developers and worked as game artist, designer and QA",
         ],
       },
     ],
@@ -458,39 +452,33 @@ const defaultProfessionalExperiences: ProfessionalExperienceItem[] = [
   {
     id: "d3-studio",
     company: "D3 Studio",
-    industry: "Design & Education",
-    locationType: "hybrid",
+    industry: "Technology & Education",
+    locationType: "remote",
     tags: ["UI/UX Design", "Education", "Mentorship", "Design Systems"],
     roles: [
       {
         title: "UI/UX Design Tutor",
         start: "Sep 2024",
-        type: "part-time",
+        type: "contract",
         locationType: "hybrid",
-        location: "Lahore, Pakistan",
         description:
           "Empowering the next generation of designers through comprehensive UI/UX education. Teaching design thinking, prototyping, and user research to create impactful digital experiences.",
         technologies: [
           "Figma",
-          "Adobe XD",
-          "Sketch",
-          "Principle",
-          "InVision",
-          "Miro",
-          "Framer",
+          "Design Systems",
+          "Color Schemes",
+          "User Interface",
+          "User Experience"
         ],
         metrics: [
           { label: "Students Mentored", value: "25+", icon: Users },
-          { label: "Satisfaction Rate", value: "95%", icon: Award },
+          { label: "Days Course", value: "14", icon: Award },
         ],
         achievements: [
           "Successfully mentored 25+ students in UI/UX design fundamentals",
           "Developed comprehensive curriculum covering design thinking to prototyping",
-          "Conducted 15+ hands-on workshops on user research and usability testing",
-          "Created design system templates used by 50+ students in their projects",
-          "Achieved 95% student satisfaction rate in course evaluations",
-          "Established industry connections leading to 8 student internship placements",
-          "Launched online design critique sessions with 100+ participants",
+          "Created design system templates used by 20+ students in their projects",
+          "Achieved 98% student satisfaction rate in course evaluations",
         ],
       },
     ],

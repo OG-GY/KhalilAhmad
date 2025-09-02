@@ -8,7 +8,7 @@ import { TechStackSection } from "@/components/tech-stack-section";
 import { Footer } from "@/components/Footer";
 import { EventsSection } from "@/components/EventSection";
 import { CommunitySection } from "@/components/CommunitySection";
-// import { ProfessionalExperienceSection } from "@/components/ProfessionalExperience";
+import { ProfessionalExperienceSection } from "@/components/ProfessionalExperience";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       <MyServices/>
       <ProjectsSection/>
       <EventsSection/>
-      {/* <ProfessionalExperienceSection/> */}
+      <ProfessionalExperienceSection/>
       <CommunitySection/>
       <TechStackSection defaultCategory="Tech Stack"/>
       <ContactSection contactEmail="reachkhalilhere@gmail.com"/>

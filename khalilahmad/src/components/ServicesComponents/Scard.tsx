@@ -134,7 +134,7 @@ export function ServiceCard(props: ServiceCardProps) {
           </div>
           <span className="h-4 w-px bg-zinc-800" aria-hidden="true" />
           <div className="text-xs text-zinc-400">
-            Pricing: <span className="text-zinc-200">{price}</span>
+            Pricing: <span className="text-yellow-600">{price}</span>
           </div>
         </div>
 
@@ -142,7 +142,7 @@ export function ServiceCard(props: ServiceCardProps) {
           asChild
           variant="secondary"
           className={cn(
-            "border-yellow-700/50 bg-zinc-950 text-yellow-600 hover:bg-zinc-900",
+            "border-yellow-700/50  text-yellow-600 hover:text-zinc-950  hover:bg-yellow-600 bg-zinc-900",
             "focus-visible:ring-yellow-600/40",
           )}
         >

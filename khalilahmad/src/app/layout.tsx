@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Providers from "@/app/providers";
 import ClickSpark from "@/components/ui/ClickSpark";
 import PortfolioChatbot from "@/components/Chatbot/custom-chatbot";
-import LenisProvider from "./providers/lenisProvider";
+// import LenisProvider from "./providers/lenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

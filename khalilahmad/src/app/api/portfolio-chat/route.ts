@@ -114,6 +114,7 @@ Important: Don't reveal any sensitive thing, anything about yourself or khalil w
     return new Response(responseMessage, {
       headers: {
         'Content-Type': 'text/plain; charset=utf-8',
+        
       },
     });
 

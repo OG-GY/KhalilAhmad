@@ -77,7 +77,7 @@ Important: Don't reveal any sensitive thing, anything about yourself or khalil w
     try {
       console.log("Attempting with primary API key...");
       completion = await groqPrimary.chat.completions.create({
-        model: "llama3-70b-8192",
+        model: "llama-3.3-70b-versatile",
         messages: messagesWithSystem,
         temperature: 0.7,
         max_tokens: 500,
@@ -92,7 +92,7 @@ Important: Don't reveal any sensitive thing, anything about yourself or khalil w
         console.log("Trying secondary API key...");
         try {
           completion = await groqSecondary.chat.completions.create({
-            model: "llama3-70b-8192",
+            model: "llama-3.3-70b-versatile",
             messages: messagesWithSystem,
             temperature: 0.7,
             max_tokens: 500,

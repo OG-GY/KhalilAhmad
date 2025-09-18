@@ -1,101 +1,69 @@
-import type { Project } from "@/types/project"
+import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
     id: "uni-sphere",
     title: "Uni-Sphere Platform",
-    description: "A real-world MVP streamlining student and community engagement across universities.",
+    description:
+      "A real-world MVP streamlining student and community engagement across universities.",
     longDescription:
       "Led the end-to-end development of a scalable platform enabling campus communities to interact, collaborate, and manage their operations. Spearheaded sprint planning and implemented CRUD operations across community modules, resulting in a user-friendly experience tested by 5+ demo communities.",
     image: "/Projects/unisphere.png",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN", "Prisma", "PostgreSQL"],
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "ShadCN",
+      "Prisma",
+      "PostgreSQL",
+    ],
     techStack: {
       frontend: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN"],
       backend: ["Next.js API Routes", "Prisma ORM"],
       database: ["PostgreSQL"],
-      tools: ["Vercel", "Git"]
+      tools: ["Vercel", "Git"],
     },
     links: {
       live: "https://uni-sphere-ashy.vercel.app/login",
-      github: "https://github.com/OG-GY/Uni-Sphere.git"
+      github: "https://github.com/OG-GY/Uni-Sphere.git",
     },
     features: [
       "Multi-community support",
       "Community creation and management",
       "Collaboration features",
       "Sprint-driven agile development",
-      "Clean and accessible UI"
+      "Clean and accessible UI",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2025,
     category: "Web Platform",
-    color: "#FF5733"
-  },
-  {
-    id: "past-paper-extractor",
-    title: "Past Paper Extractor",
-    description: "An OCR-based web application for retrieving and storing academic past papers.",
-    longDescription:
-      "Engineered an OCR-driven solution using Streamlit and OpenCV that simplifies access to academic resources for students. Allowed categorization by semester, teacher, subject, and paper type, solving a recurring student pain point for past paper accessibility.",
-    image: "/Projects/pastpaper.png",
-    technologies: ["Streamlit", "Python", "OpenCV"],
-    techStack: {
-      frontend: ["Streamlit"],
-      backend: ["Python", "OpenCV"],
-      tools: ["GitHub"]
-    },
-    links: {
-      live:"https://github.com/OG-GY/PastPaperExtractor"
-    },
-    status: "prototype" ,
-    features: [
-      "Image-to-text OCR",
-      "Searchable past paper database",
-      "Categorization by semester, subject, teacher"
-    ],
-    year: 2024,
-    category: "OCR Tool",
-    color: "#4B8BBE"
-  },
-  {
-    id: "bulk-email-sender",
-    title: "Bulk Email Sender",
-    description: "A tool to automate HTML and text-based email campaigns for communities.",
-    longDescription:
-      "Developed an efficient community tool with dynamic HTML/text email templates, cutting email campaign prep time by 3+ hours weekly. Supported sending targeted communication to 50+ members with reusable templates.",
-    image: "/Projects/bulkemail.png",
-    technologies: ["Streamlit", "Python"],
-    techStack: {
-      frontend: ["Streamlit"],
-      backend: ["Python"],
-      tools: ["SMTP", "GitHub"]
-    },
-    links: {
-      live: "https://bulk-email-sender.vercel.app",
-      github: "https://github.com/OG-GY/MultipleEmailsSender"
-    },
-    features: [
-      "Custom email templates",
-      "Bulk sending functionality",
-      "HTML and plain-text support"
-    ],
-    status: "completed" ,
-    year: 2024,
-    category: "Utility",
-    color: "#28B463"
+    color: "#FF5733",
   },
   {
     id: "uet-portfolio",
     title: "UET Game Studio Portfolio",
-    description: "A polished portfolio site for UET Game Studio showcasing student-built games.",
+    description:
+      "A polished portfolio site for UET Game Studio showcasing student-built games.",
     longDescription:
       "Built and deployed a modern portfolio for UET Game Studio, showcasing 15+ WebGL Unity games. Integrated game cards with smooth animations, attracting visibility and cross-device compatibility. Continues to evolve with added game support and frontend enhancements.",
     image: "/Projects/ugs.png",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "AnimataUI",
+      "ShadCN",
+    ],
     techStack: {
-      frontend: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+      frontend: [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "AnimataUI",
+        "ShadCN",
+      ],
       backend: [],
-      tools: ["Vercel", "Git"]
+      tools: ["Vercel", "Git"],
     },
     links: {
       live: "https://uetgamstudio.com",
@@ -104,25 +72,73 @@ export const projects: Project[] = [
       "Game showcase",
       "Responsive design",
       "Smooth page transitions",
-      "Unity WebGL support"
+      "Unity WebGL support",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2024,
     category: "Portfolio",
-    color: "#AF7AC5"
+    color: "#AF7AC5",
   },
+  {
+  id: "pixalrise",
+  title: "Pixalrise",
+  description: "An AI-integrated portfolio for a service-based agency.",
+  longDescription:
+    "Designed and developed a modern portfolio for Pixalrise, a service-based agency, using Next.js and TypeScript. Integrated AI-powered features for dynamic content generation and personalized user experience. The site showcases agency services, projects, and team profiles with smooth animations and responsive layouts.",
+  image: "/Projects/pixalrise.png",
+  technologies: [
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "OpenAI API",
+    "ShadCN"
+  ],
+  techStack: {
+    frontend: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN"],
+    backend: ["Next.js API Routes", "OpenAI API"],
+    tools: ["Vercel", "Git"]
+  },
+  links: {
+    live: "https://pixalrise.vercel.app",
+    github: "https://github.com/OG-GY/Pixalrise"
+  },
+  features: [
+    "AI-powered Assitant Chatbot",
+    "Service and project showcase",
+    "Responsive design",
+    "Smooth page transitions",
+    "Recent Work with Experience"
+  ],
+  status: "completed",
+  year: 2025,
+  category: "Portfolio",
+  color: "#00B894"
+},
   {
     id: "portal-uet-portfolio",
     title: "Gaming Portal for UET Game Studio",
-    description: "A polished portfolio site for UET Game Studio showcasing student-built games.",
+    description:
+      "A polished portfolio site for UET Game Studio showcasing student-built games.",
     longDescription:
       "Built and deployed a modern portfolio for UET Game Studio, showcasing 15+ WebGL Unity games. Integrated game cards with smooth animations, attracting visibility and cross-device compatibility. Continues to evolve with added game support and frontend enhancements.",
     image: "/Projects/pugs.png",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "AnimataUI",
+      "ShadCN",
+    ],
     techStack: {
-      frontend: ["Next.js", "Tailwind CSS", "TypeScript", "AnimataUI", "ShadCN"],
+      frontend: [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "AnimataUI",
+        "ShadCN",
+      ],
       backend: [],
-      tools: ["Vercel", "Git"]
+      tools: ["Vercel", "Git"],
     },
     links: {
       live: "https://portfolio.uetgamstudio.com",
@@ -131,17 +147,101 @@ export const projects: Project[] = [
       "Game showcase",
       "Responsive design",
       "Smooth page transitions",
-      "Unity WebGL support"
+      "Unity WebGL support",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2024,
     category: "Portfolio",
-    color: "#AF7AC5"
+    color: "#AF7AC5",
+  },
+  {
+    id: "past-paper-extractor",
+    title: "Past Paper Extractor",
+    description:
+      "An OCR-based web application for retrieving and storing academic past papers.",
+    longDescription:
+      "Engineered an OCR-driven solution using Streamlit and OpenCV that simplifies access to academic resources for students. Allowed categorization by semester, teacher, subject, and paper type, solving a recurring student pain point for past paper accessibility.",
+    image: "/Projects/pastpaper.png",
+    technologies: ["Streamlit", "Python", "OpenCV"],
+    techStack: {
+      frontend: ["Streamlit"],
+      backend: ["Python", "OpenCV"],
+      tools: ["GitHub"],
+    },
+    links: {
+      live: "https://github.com/OG-GY/PastPaperExtractor",
+    },
+    status: "prototype",
+    features: [
+      "Image-to-text OCR",
+      "Searchable past paper database",
+      "Categorization by semester, subject, teacher",
+    ],
+    year: 2024,
+    category: "OCR Tool",
+    color: "#4B8BBE",
+  },
+  {
+    id: "game-checkpoint",
+    title: "Game Checkpoint",
+    description: "A Live Game News Extractor through RSS Feeds.",
+    longDescription:
+      "Developed a real-time game news aggregator using Next.js, TypeScript, and Tailwind CSS. Integrates multiple RSS feeds to deliver up-to-date gaming news, reviews, and updates in a clean, responsive dashboard. Features filled for personalized news tracking.",
+    image: "/Projects/gamecheckpoint.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "RSS"],
+    techStack: {
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS"],
+      backend: ["Next.js API Routes"],
+      tools: ["Vercel", "Git", "RSS Parser"],
+    },
+    links: {
+      // live: "https://game-checkpoint.vercel.app",
+      github: "https://github.com/OG-GY/LiveGameNewsExtractor",
+    },
+    features: [
+      "Live game news aggregation",
+      "RSS feed integration",
+      "Multi Feed Integration",
+      "Responsive dashboard",
+    ],
+    status: "completed",
+    year: 2025,
+    category: "Web App",
+    color: "#1ABC9C",
+  },
+  {
+    id: "bulk-email-sender",
+    title: "Bulk Email Sender",
+    description:
+      "A tool to automate HTML and text-based email campaigns for communities.",
+    longDescription:
+      "Developed an efficient community tool with dynamic HTML/text email templates, cutting email campaign prep time by 3+ hours weekly. Supported sending targeted communication to 50+ members with reusable templates.",
+    image: "/Projects/bulkemail.png",
+    technologies: ["Streamlit", "Python"],
+    techStack: {
+      frontend: ["Streamlit"],
+      backend: ["Python"],
+      tools: ["SMTP", "GitHub"],
+    },
+    links: {
+      live: "https://bulk-email-sender.vercel.app",
+      github: "https://github.com/OG-GY/MultipleEmailsSender",
+    },
+    features: [
+      "Custom email templates",
+      "Bulk sending functionality",
+      "HTML and plain-text support",
+    ],
+    status: "completed",
+    year: 2024,
+    category: "Utility",
+    color: "#28B463",
   },
   {
     id: "nexus-editor",
     title: "Nexus Code Editor",
-    description: "A lightweight code editor enhanced with Data Structure & Algorithm modules.",
+    description:
+      "A lightweight code editor enhanced with Data Structure & Algorithm modules.",
     longDescription:
       "Architected a custom Python-based editor with core editing features like undo/redo, search, syntax highlighting, and integrated DSA operations to reinforce programming learning. Built using QT Creator and designed for students tackling algorithm problems.",
     image: "/Projects/nexuscode.png",
@@ -149,50 +249,52 @@ export const projects: Project[] = [
     techStack: {
       frontend: ["QT UI"],
       backend: ["Python"],
-      tools: ["PyQT5"]
+      tools: ["PyQT5"],
     },
     links: {
-      github: "https://github.com/OG-GY/Nexus-Editor"
+      github: "https://github.com/OG-GY/Nexus-Editor",
     },
     features: [
       "Syntax highlighting",
       "Undo and redo actions",
-      "DSA-integrated examples"
+      "DSA-integrated examples",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2024,
     category: "Desktop App",
-    color: "#F1C40F"
+    color: "#F1C40F",
   },
   {
     id: "honey-scraper",
     title: "Honey Scraper - 1 Million Books",
-    description: "A scalable book metadata scraper using multi-threaded scraping pipelines.",
+    description:
+      "A scalable book metadata scraper using multi-threaded scraping pipelines.",
     longDescription:
       "Automated the extraction of metadata for over 1 million books using Python, BeautifulSoup, and PyQT. Reduced manual effort by over 14 hours while boosting team productivity by 40% via parallelized scraping.",
     image: "/Projects/honeyscrapper.png",
     technologies: ["Python", "BeautifulSoup", "PyQT5"],
     techStack: {
       backend: ["Python", "BeautifulSoup"],
-      tools: ["PyQT5", "Threads"]
+      tools: ["PyQT5", "Threads"],
     },
     links: {
-      github: "https://github.com/OG-GY/Honey-Scraper"
+      github: "https://github.com/OG-GY/Honey-Scraper",
     },
     features: [
       "Multi-threaded scraping",
       "Metadata parsing",
-      "Error handling for large-scale requests"
+      "Error handling for large-scale requests",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2023,
     category: "Scraper",
-    color: "#2E86C1"
+    color: "#2E86C1",
   },
   {
     id: "annexxie-cafe",
     title: "Annexxie Cafe Management System",
-    description: "An ASP.NET-based management system for online food orders and user tracking.",
+    description:
+      "An ASP.NET-based management system for online food orders and user tracking.",
     longDescription:
       "Built an end-to-end cafe management system with both user-facing and admin-facing modules. Managed orders, menus, user data, and implemented SQL-based tracking for operations efficiency.",
     image: "/Projects/caffemanager.png",
@@ -201,25 +303,26 @@ export const projects: Project[] = [
       frontend: ["Razor Pages"],
       backend: ["C#", "ASP.NET Core"],
       database: ["SQL Server"],
-      tools: ["SSMS"]
+      tools: ["SSMS"],
     },
     links: {
-      github: "https://github.com/OG-GY/Annexxie"
+      github: "https://github.com/OG-GY/Annexxie",
     },
     features: [
       "Admin and User portals",
       "Order and menu handling",
-      "Secure database schema"
+      "Secure database schema",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2021,
     category: "Management System",
-    color: "#F39C12"
+    color: "#F39C12",
   },
   {
     id: "school-lama-backend",
     title: "School Lama - Backend",
-    description: "A backend server with integrated database for managing a complete school including parent, teacher, student and principal.",
+    description:
+      "A backend server with integrated database for managing a complete school including parent, teacher, student and principal.",
     longDescription:
       "Developed a comprehensive backend server in Next.js with integrated APIs and PostgreSQL database for complete school management. Efficiently manages all exam timings, lectures, announcements and results across different user roles including parents, teachers, students and principals.",
     image: "/Projects/schoollama.png",
@@ -228,10 +331,10 @@ export const projects: Project[] = [
       frontend: [],
       backend: ["Next.js API Routes", "TypeScript", "Prisma ORM"],
       database: ["PostgreSQL"],
-      tools: ["Git"]
+      tools: ["Git"],
     },
     links: {
-      github: "https://github.com/OG-GY/School-Lama-Backend"
+      github: "https://github.com/OG-GY/School-Lama-Backend",
     },
     features: [
       "Multi-role user management (Parent, Teacher, Student, Principal)",
@@ -239,35 +342,36 @@ export const projects: Project[] = [
       "Lecture planning and tracking",
       "Announcements system",
       "Results management",
-      "RESTful API endpoints"
+      "RESTful API endpoints",
     ],
     status: "completed",
     year: 2024,
     category: "Backend System",
-    color: "#3498DB"
+    color: "#3498DB",
   },
   {
     id: "personal-portfolio",
     title: "Personal Portfolio (Khalil Ahmad)",
-    description: "A personal web portfolio highlighting projects and professional journey.",
+    description:
+      "A personal web portfolio highlighting projects and professional journey.",
     longDescription:
       "Crafted a clean, multi-page portfolio website from scratch using HTML, CSS, JS, and JQuery. Highlighted community contributions, major projects, and embedded GitHub/LinkedIn integrations to build personal branding.",
     image: "/Projects/portfolio.png",
     technologies: ["HTML", "CSS", "JavaScript", "JQuery"],
     techStack: {
-      frontend: ["HTML", "CSS", "JavaScript", "JQuery"]
+      frontend: ["HTML", "CSS", "JavaScript", "JQuery"],
     },
     links: {
-      github: "https://github.com/OG-GY/Khalil-Ahmad"
+      github: "https://github.com/OG-GY/Khalil-Ahmad",
     },
     features: [
       "Multi-page layout",
       "Interactive project sections",
-      "Responsive design"
+      "Responsive design",
     ],
-    status: "completed" ,
+    status: "completed",
     year: 2021,
     category: "Portfolio",
-    color: "#E74C3C"
-  }
+    color: "#E74C3C",
+  },
 ] satisfies Project[];

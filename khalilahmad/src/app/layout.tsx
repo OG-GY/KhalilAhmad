@@ -6,6 +6,7 @@ import Providers from "@/app/providers";
 import ClickSpark from "@/components/ui/ClickSpark";
 import PortfolioChatbot from "@/components/Chatbot/custom-chatbot";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // import LenisProvider from "./providers/lenisProvider";
 
 const geistSans = Geist({
@@ -68,6 +69,7 @@ export default function RootLayout({
                 {/* <LenisProvider> */}
                   {children}
                   <Analytics />
+                  <SpeedInsights />
                 {/* </LenisProvider> */}
               </ClickSpark>
               <PortfolioChatbot />

@@ -66,7 +66,7 @@ export const projects: Project[] = [
       tools: ["Vercel", "Git"],
     },
     links: {
-      live: "https://uetgamstudio.com",
+      live: "https://uetgamestudio.com",
     },
     features: [
       "Game showcase",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
       tools: ["Vercel", "Git"],
     },
     links: {
-      live: "https://portfolio.uetgamstudio.com",
+      live: "https://portal.uetgamestudio.com",
     },
     features: [
       "Game showcase",

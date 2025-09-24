@@ -99,7 +99,7 @@ export const projects: Project[] = [
     tools: ["Vercel", "Git"]
   },
   links: {
-    live: "https://pixalrise.vercel.app",
+    live: "https://pixalrise.com",
     github: "https://github.com/OG-GY/Pixalrise"
   },
   features: [
@@ -195,7 +195,7 @@ export const projects: Project[] = [
       tools: ["Vercel", "Git", "RSS Parser"],
     },
     links: {
-      // live: "https://game-checkpoint.vercel.app",
+      live: "https://gamecheckpoint.vercel.app/",
       github: "https://github.com/OG-GY/LiveGameNewsExtractor",
     },
     features: [
